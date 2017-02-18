@@ -46,8 +46,44 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+body {
+  background-color: rgb(253, 65, 100);
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', verdana, sans-serif;
+}
+
+#content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.catchline {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+
+  @media (min-width: 750px) {
+    margin-top: -44px;
+    text-align: left;
+    padding-left: 211px;
+  }
+
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon > * + * {
+  margin-left: 1em;
+}
