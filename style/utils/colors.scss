@@ -1,0 +1,26 @@
+@import '../../node_modules/trowel-core/src/trowel-theme';
+
+// scss-lint:disable ColorVariable
+$colors: (
+  'white': rgb(255, 255, 255),
+  'gray-light': trwl-theme-color('gray-light'),
+  'gray-medium': trwl-theme-color('gray-medium'),
+  'gray-dark': trwl-theme-color('gray-dark'),
+  'gray-darker': trwl-theme-color('gray-darker'),
+  'primary': trwl-theme-color('primary'),
+  'success': trwl-theme-color('success'),
+  'warning': trwl-theme-color('warning'),
+  'danger': trwl-theme-color('danger'),
+);
+
+@function color($color, $opacity: 1) {
+  @return transparentize(map-get($colors, $color), 1 - $opacity);
+}
+
+@mixin color($color, $opacity: 1) {
+  color: color($color, $opacity);
+}
+
+@mixin background-color($color, $opacity: 1) {
+  background-color: color($color, $opacity);
+}

@@ -1,0 +1,12 @@
+$font-families: (
+  'open-sans': #{"'Open Sans', sans-serif"},
+  'fredoka-one': #{"'Fredoka One', cursive"},
+);
+
+@function font-family($font-family) {
+  @return map-get($font-families, $font-family);
+}
+
+@mixin font-family($font-family) {
+  font-family: font-family($font-family);
+}

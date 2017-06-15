@@ -1,5 +1,54 @@
 @charset "utf-8";
 
-* {
-  color: yellow;
-}
+$trowel-config: (
+  'breakpoints': (
+    'xs': (
+      'max': 767px,
+    ),
+    'sm': (
+      'min': 768px,
+      'max': 991px,
+    ),
+    'md': (
+      'min': 992px,
+      'max': 1199px,
+    ),
+    'lg': (
+      'min': 1200px,
+    ),
+  ),
+);
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,400i,700');
+
+@import '../node_modules/trowel-core/src/trowel';
+@import '../node_modules/normalize.css/normalize';
+
+/**
+ * Configuration and helpers
+ */
+@import 'utils/*';
+
+
+/**
+ * Base stuff
+ */
+@import 'bases/*';
+
+
+/**
+* Vendors
+*/
+@import 'vendors/*/*';
+
+
+/**
+* Components
+*/
+@import 'components/*/*';
+
+
+/**
+ * Layout-related sections
+ */
+@import 'layouts/*/*';
