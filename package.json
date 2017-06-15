@@ -2,7 +2,7 @@
   "name": "trowel.github.io",
   "dependencies": {
     "normalize.css": "^7.0.0",
-    "trowel-core": "^4.0.2"
+    "trowel-core": "^4.0.3"
   },
   "devDependencies": {
     "babel": "^6.23.0",
