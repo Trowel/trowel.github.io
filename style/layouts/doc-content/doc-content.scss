@@ -24,3 +24,38 @@
   padding-top: $doccontent--padding;
   margin-top: 4rem;
 }
+
+#doc-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#doc-content > *:first-child {
+  padding-top: $doccontent--padding;
+}
+
+
+#doc-content a {
+  display: inline-block;
+  position: relative;
+
+  @include on-events {
+    @include color('white');
+    text-decoration: none;
+
+    &::before {
+      height: 100%;
+    }
+  }
+}
+
+#doc-content a::before {
+  content: "";
+  @include background-color('success');
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: -1;
+}

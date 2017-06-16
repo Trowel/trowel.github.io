@@ -1,0 +1,25 @@
+@import '../../utils/colors';
+
+.page-control {
+  text-align: center;
+  border-top: 4px solid color('gray-light');
+  padding: 1.5em 1em;
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include media-query('sm') {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.page-control span {
+  font-style: italic;
+  font-size: 0.8em;
+
+  @include media-query('sm') {
+    margin-right: 0.5em;
+  }
+}

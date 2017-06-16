@@ -48,6 +48,12 @@
   display: block;
 }
 
+.doc-sidebar__menu .active {
+  @include color('success');
+  pointer-events: none;
+  text-decoration: none;
+}
+
 .doc-sidebar__menu li {
   margin-top: 2rem;
   font-size: 0.875em;
