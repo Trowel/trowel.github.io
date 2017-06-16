@@ -139,9 +139,94 @@ var _menu = __webpack_require__(0);
 
 var _menu2 = _interopRequireDefault(_menu);
 
+var _affix = __webpack_require__(2);
+
+var _affix2 = _interopRequireDefault(_affix);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var menus = new _menu2.default(document.querySelectorAll('[data-flag="menu"]'));
+var affix = new _affix2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Affix = function () {
+  function Affix() {
+    _classCallCheck(this, Affix);
+
+    this.contentWrapper = document.getElementById('doc-content');
+
+    if (!this.contentWrapper.getAttribute('data-affix')) return;
+
+    this.print();
+    return this.listener();
+  }
+
+  _createClass(Affix, [{
+    key: 'print',
+    value: function print() {
+      var nav = document.createElement("nav");
+      nav.classList.add('affix');
+      nav.id = 'affix';
+
+      this.headings.map(function (heading) {
+        var anchor = document.createElement("a");
+        anchor.innerText = heading.innerText;
+        anchor.setAttribute('data-anchor', heading.id);
+
+        return nav.append(anchor);
+      });
+
+      return this.contentWrapper.before(nav);
+    }
+  }, {
+    key: 'goTo',
+    value: function goTo(event) {
+      var target = document.getElementById(event.target.getAttribute('data-anchor'));
+      var header = document.getElementById('doc-header');
+      var subHeader = document.getElementById('doc-subheader');
+      var scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
+      return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
+    }
+  }, {
+    key: 'listener',
+    value: function listener() {
+      var _this = this;
+
+      this.anchors.map(function (anchor) {
+        return anchor.addEventListener('click', _this.goTo.bind(_this));
+      });
+    }
+  }, {
+    key: 'headings',
+    get: function get() {
+      return [].slice.call(this.contentWrapper.querySelectorAll('h2'));
+    }
+  }, {
+    key: 'anchors',
+    get: function get() {
+      return [].slice.call(document.querySelectorAll('#affix a'));
+    }
+  }]);
+
+  return Affix;
+}();
+
+exports.default = Affix;
+module.exports = exports['default'];
 
 /***/ })
 /******/ ]);

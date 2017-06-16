@@ -5,7 +5,7 @@ layout: default
 {% include subheader-documentation.html title=page.title library=page.library %}
 {% include sidebar-documentation.html %}
 
-<div id="doc-content">
+<div id="doc-content"{% if page.affix == true %} data-affix="load"{% endif %}>
   {{ content }}
 </div>
 

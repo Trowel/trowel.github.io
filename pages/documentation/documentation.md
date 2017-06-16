@@ -4,6 +4,7 @@ type: trowel
 title: documentation
 library: trowel/trowel
 permalink: documentation/
+affix: true
 ---
 
 ## Section 1

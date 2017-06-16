@@ -1,12 +1,21 @@
 @import '../../components/doc-header/utils/variables';
 @import '../../components/doc-subheader/utils/variables';
 @import '../../components/doc-sidebar/utils/variables';
+@import '../../components/affix/utils/variables';
+
+@import './utils/variables';
 
 #doc-content {
-  padding: 1em;
+  padding: $doccontent--padding;
   margin-top: $header--height + $docsubheader--height;
 
-  @include media-query('sm', 'and-more') {
+  @include media-query('sm') {
     margin-left: $docsidebar--width;
+  }
+
+  .affix ~ & {
+    @include media-query('md') {
+      margin-right: $affix--width;
+    }
   }
 }

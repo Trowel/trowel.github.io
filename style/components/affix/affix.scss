@@ -1,0 +1,36 @@
+@import '../doc-header/utils/variables';
+@import '../doc-subheader/utils/variables';
+@import '../../layouts/doc-content/utils/variables';
+
+@import '../../utils/selectors';
+
+@import './utils/variables';
+
+.affix {
+  position: fixed;
+  top: $header--height + $docsubheader--height;
+  bottom: 0;
+  right: 0;
+  width: $affix--width;
+  display: flex;
+  flex-direction: column;
+  padding: $doccontent--padding 0;
+  overflow-y: auto;
+
+  @include media-query('sm', 'and-less') {
+    display: none;
+  }
+}
+
+.affix a {
+  font-size: 0.75em;
+  line-height: 1.416666667;
+  padding: 0.5em $doccontent--padding;
+  border-left: 2px solid color('success');
+  cursor: pointer;
+
+  @include on-events {
+    @include color('success');
+    text-decoration: none;
+  }
+}

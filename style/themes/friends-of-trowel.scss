@@ -1,5 +1,16 @@
 @import '../utils/colors';
 
+$fot--color: 'danger';
+
 .fot-page .doc-subheader {
-  @include background-color('danger');
+  @include background-color($fot--color);
+}
+
+.fot-page .affix a {
+  border-color: color($fot--color);
+
+  @include on-events {
+    @include color($fot--color);
+    text-decoration: none;
+  }
 }
