@@ -1,0 +1,15 @@
+@import '../../utils/colors';
+
+.callout {
+  font-style: italic;
+  padding-left: 1em;
+  border-left: 2px solid;
+}
+
+.callout--default {
+  border-color: color('success');
+}
+
+.callout--alert {
+  border-color: color('warning');
+}

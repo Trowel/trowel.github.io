@@ -14,3 +14,7 @@ $fot--color: 'danger';
     text-decoration: none;
   }
 }
+
+.fot-page .callout--default {
+  border-color: color($fot--color);
+}
