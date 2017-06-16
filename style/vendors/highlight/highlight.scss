@@ -8,6 +8,7 @@
   @include background-color('gray-light');
   margin-bottom: 1rem;
   padding: 1em;
+  overflow-y: auto;
 
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error

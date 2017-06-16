@@ -6,7 +6,7 @@
 @import './utils/variables';
 
 #doc-content {
-  padding: $doccontent--padding;
+  padding: 0 $doccontent--padding;
   margin-top: $header--height + $docsubheader--height;
 
   @include media-query('sm') {
@@ -18,4 +18,8 @@
       margin-right: $affix--width;
     }
   }
+}
+
+#doc-content h2 {
+  padding-top: $doccontent--padding;
 }

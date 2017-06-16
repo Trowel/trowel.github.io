@@ -1,0 +1,15 @@
+@import '../utils/colors';
+
+code {
+  @include background-color('gray-light');
+  display: inline-block;
+  border: 1px solid color('gray-medium');
+  padding: 0 0.5em;
+  font-style: initial;
+
+  .highlight & {
+    border: 0;
+    padding: initial;
+    background-color: transparent;
+  }
+}
