@@ -1,0 +1,66 @@
+@import '../doc-subheader/utils/variables';
+@import '../doc-header/utils/variables';
+
+@import '../../utils/colors';
+@import '../../utils/selectors';
+
+@import './utils/variables';
+
+.doc-sidebar__toggle {
+  @include background-color($docsidebar--background-color);
+  width: $docsubheader--height;
+  height: $docsubheader--height;
+  position: fixed;
+  left: 0;
+  top: $header--height;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  @include on-events {
+    @include background-color('primary');
+    @include color($docsidebar--background-color);
+    outline: 0;
+  }
+}
+
+.doc-sidebar__menu {
+  @include background-color($docsidebar--background-color);
+  width: $docsidebar--width;
+  position: fixed;
+  top: $header--height;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+
+.doc-sidebar__menu ul {
+  list-style: none;
+}
+
+.doc-sidebar__menu > ul > li:first-child {
+  margin-top: 0;
+}
+
+.doc-sidebar__menu a {
+  display: block;
+}
+
+.doc-sidebar__menu li {
+  margin-top: 2rem;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.doc-sidebar__menu li li {
+  padding-left: 1em;
+  margin-top: 1.25rem;
+  font-weight: initial;
+  font-size: 0.75rem;
+}
+
+.doc-sidebar__menu li li li {
+  margin-top: 0.85rem;
+}

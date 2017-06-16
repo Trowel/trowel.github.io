@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+  <body class="{% if page.type == 'friendsoftrowel' %}fot-page{% endif %}">
+    {{ content }}
+    <script src="/assets/javascript/trowel.github.io.min.js"></script>
   </body>
-
 </html>

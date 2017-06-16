@@ -1,0 +1,5 @@
+@import '../utils/colors';
+
+.fot-page .doc-subheader {
+  @include background-color('danger');
+}

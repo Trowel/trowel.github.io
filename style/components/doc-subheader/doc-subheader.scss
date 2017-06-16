@@ -1,0 +1,58 @@
+@import '../doc-header/utils/variables';
+@import '../doc-sidebar/utils/variables';
+@import '../../utils/colors';
+@import '../../utils/font-families';
+
+@import './utils/variables';
+
+.doc-subheader {
+  @include background-color('success');
+  @include color('white');
+  height: $docsubheader--height;
+  position: fixed;
+  top: $header--height;
+  left: $docsubheader--height;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+
+  @include media-query('sm') {
+    left: $docsidebar--width;
+  }
+}
+
+.doc-subheader::before {
+  content: '';
+  height: 100%;
+  width: 2em;
+  margin-right: 1em;
+  background-image: url('/assets/images/arturo/arturo@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  flex-shrink: 0;
+
+  @include media-query('xs', 'and-less') {
+    display: none;
+  }
+}
+
+.doc-subheader > * + * {
+  margin-left: 1em;
+}
+
+.doc-subheader__title {
+  @include font-family('fredoka-one');
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.0625rem;
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.doc-subheader__github-wrapper {
+  display: flex;
+}

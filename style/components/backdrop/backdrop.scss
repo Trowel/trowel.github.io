@@ -1,0 +1,31 @@
+@import '../../utils/colors';
+@import './utils/variables';
+
+.backdrop {
+  display: block;
+  touch-action: manipulation;
+  background-image: none;
+  cursor: pointer;
+  user-select: none;
+  background-color: color('black', 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: $backdrop--z-index;
+  transition: $backdrop--transition;
+
+  &.is-in {
+    pointer-events: initial;
+    opacity: 1;
+  }
+
+  @include media-query('sm') {
+    display: none;
+  }
+}

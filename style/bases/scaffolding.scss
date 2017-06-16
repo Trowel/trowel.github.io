@@ -1,7 +1,7 @@
 @import '../utils/font-families';
+@import '../utils/selectors';
 
 body,
-p,
 blockquote,
 pre,
 hr,
@@ -14,7 +14,34 @@ figure {
   padding: 0;
 }
 
+p {
+  margin: 0 0 1em;
+}
+
 body {
   @include font-family('open-sans');
   @include color('primary');
+  line-height: 1.8;
+}
+
+
+a {
+  text-decoration: none;
+
+  &,
+  &:visited {
+    color: inherit;
+  }
+
+  @include on-events {
+    text-decoration: underline;
+  }
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }

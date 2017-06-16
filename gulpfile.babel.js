@@ -43,7 +43,7 @@ gulp.task('styles', () => {
         .pipe($.autoprefixer(config.autoprefixer))
         .pipe($.sourcemaps.write())
         .pipe($.cssmin())
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('./assets/css'))
 });
 
 gulp.task('default', ['styles']);

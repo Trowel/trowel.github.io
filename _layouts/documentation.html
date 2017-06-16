@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% include header-documentation.html %}
+{% include subheader-documentation.html title=page.title library=page.library %}
+{% include sidebar-documentation.html %}
+
+<div id="doc-content">
+  {{ content }}
+</div>
+
+{% include footer.html %}

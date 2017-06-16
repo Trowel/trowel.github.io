@@ -1,0 +1,12 @@
+@import '../../components/doc-header/utils/variables';
+@import '../../components/doc-subheader/utils/variables';
+@import '../../components/doc-sidebar/utils/variables';
+
+#doc-content {
+  padding: 1em;
+  margin-top: $header--height + $docsubheader--height;
+
+  @include media-query('sm', 'and-more') {
+    margin-left: $docsidebar--width;
+  }
+}
