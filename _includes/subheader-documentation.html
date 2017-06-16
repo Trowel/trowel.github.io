@@ -1,6 +1,11 @@
 <div class="doc-subheader" id="doc-subheader">
 
-  <!-- {% include svg/typo.html width="74" height="13" %} -->
+  {% if page.type == "friendsoftrowel" and page.title != "Friends of Trowel" %}
+    <div class="doc-subheader__logo-typo">
+      {% include svg/typo.html width="74" height="13" %}
+    </div>
+  {% endif %}
+
   <h1 class="doc-subheader__title">{{ page.title }}</h1>
 
   <div class="doc-subheader__github-wrapper">

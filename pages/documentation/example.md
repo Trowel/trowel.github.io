@@ -1,11 +1,12 @@
 ---
 layout: documentation
 type: trowel
-title: documentation
+title: getting started
 library: trowel/trowel
-permalink: documentation/
-affix: true
+permalink: /documentation/example/
+affix: false
 ---
+
 
 ## Section 1
 
