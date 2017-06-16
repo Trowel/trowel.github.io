@@ -20,7 +20,6 @@ p {
 
 body {
   @include font-family('open-sans');
-  @include color('primary');
   line-height: 1.8;
 }
 

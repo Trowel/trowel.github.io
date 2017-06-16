@@ -7,6 +7,48 @@ permalink: /documentation/trowel-core/use-a-component/install/
 affix: true
 ---
 
-##  Install a trowel component
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Install Trowel
+### Download
+A *Trowel component* cannot be compiled without Trowel installed into your scss file. So you need first to install Trowel-core which is the scss algorithm making every *Trowel component* working.
+
+You can download Trowel via command line with npm, yarn or bower as shown below.
+
+```sh
+# npm
+npm install trowel-core --save
+
+# yarn
+yarn add trowel-core
+
+# bower
+bower install trowel-core --save
+```
+
+You can also download a ZIP [clicking here](https://github.com/Trowel/Trowel/archive/master.zip).
+
+
+### Import the library
+Once downloaded, import it at the top of your main `scss` file :
+
+```scss
+// main.scss
+@import 'path/to/your/dependencies/trowel-core/src/trowel';
+```
+
+## Install a *Trowel Component*
+Trowel-core installed, we are now good to go and we can implement a *Trowel Component*.
+
+Download the *Trowel Component* you want to use, and import it after `trowel-core` into your main `scss` file.
+
+The download and the file to import depends of each library, but for the official *FriendsOfTrowel* components, it always respect the same pattern.
+
+```scss
+// main.scss
+@import 'path/to/your/dependencies/trowel-core/src/trowel';
+
+// the trowel component we want to use
+@import 'path/to/your/dependencies/trowel-button/trowel-buttons/src/scss/buttons'
+```
+
+{% include page-control.html href="/documentation/trowel-core/use-a-component/config/" label="Set your global configuration" %}

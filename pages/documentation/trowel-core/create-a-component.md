@@ -4,9 +4,11 @@ type: trowel
 title: Create a trowel component
 library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/
-affix: true
+affix: false
 ---
 
-##  Create a trowel component
+It is now time to learn how to build a *Trowel component* for making possible the *Trowel variable* pattern.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We will see that Trowel requires to write in a new way selectors and statements but don't worry we made the API as simple and as semantic that possible.
+
+{% include page-control.html href="/documentation/trowel-core/create-a-component/selector-object/" label="Create a selector object" %}

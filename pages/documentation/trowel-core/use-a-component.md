@@ -4,9 +4,14 @@ type: trowel
 title: Use a trowel component
 library: trowel/trowel
 permalink: /documentation/trowel-core/use-a-component/
-affix: true
+affix: false
 ---
 
-##  Use a trowel component
+*Trowel* is a scss plugin for visual component framework (like bootstrap, foundation, etc.). What we call *Trowel component* is a visual component using Trowel.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A *Trowel component* can be built by anyone (see [Create your own Trowel component](/documentation/trowel-core/create-a-component/)), and you use one of the official component listed in the Friends of Trowel section.
+
+We will see in this chapter how to install, use and customize a *Trowel component*.
+
+{% include page-control.html href="/documentation/trowel-core/use-a-component/install/" label="Install a trowel component
+" %}

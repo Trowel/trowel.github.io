@@ -4,7 +4,7 @@ type: trowel
 title: getting started
 library: trowel/trowel
 permalink: /documentation/example/
-affix: false
+affix: true
 ---
 
 
