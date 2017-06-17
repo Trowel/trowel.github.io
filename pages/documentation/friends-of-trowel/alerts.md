@@ -44,7 +44,7 @@ You have several javascript files for different use cases :
 
 
 ### *Twig template*
-The twig template is located at the `./src/twig/alert.html.twig`.
+The twig template ready to be `include` or `embed` is located at `./src/twig/alert.html.twig`.
 
 ## Usage
 

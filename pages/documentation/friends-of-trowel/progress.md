@@ -39,7 +39,7 @@ The main scss file to include to your main `.scss` file is located at the `./src
 
 
 ### *Twig template*
-The twig template is located at the `./src/twig/progres.html.twig`.
+The twig template ready to be `include` or `embed` is located at `./src/twig/progres.html.twig`.
 
 ## Usage
 
