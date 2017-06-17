@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Collapses* by using npm, Yarn or Bower
+You can fetch *Trowel Collapses* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-collapses
+$ bower install --save trowel-collapses
 
 # With npm
-$ npm install trowel-collapses
+$ npm install --save trowel-collapses
 
 # With yarn
 $ yarn add trowel-collapses

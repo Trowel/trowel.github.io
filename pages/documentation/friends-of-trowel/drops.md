@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Drops* by using npm, Yarn or Bower
+You can fetch *Trowel Drops* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-drops
+$ bower install --save trowel-drops
 
 # With npm
-$ npm install trowel-drops
+$ npm install --save trowel-drops
 
 # With yarn
 $ yarn add trowel-drops

@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install trowel-Forms by using npm, Yarn or Bower with the name `trowel-forms` (previously `friendsOfTrowel-Forms-component`)
+You can fetch *Trowel Forms* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-forms
+$ bower install --save trowel-forms
 
 # With npm
-$ npm install trowel-forms
+$ npm install --save trowel-forms
 
 # With yarn
 $ yarn add trowel-forms

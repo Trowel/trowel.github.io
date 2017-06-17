@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Alerts* by using npm, Yarn or Bower
+You can fetch *Trowel Alerts* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-alerts
+$ bower install --save trowel-alerts
 
 # With npm
-$ npm install trowel-alerts
+$ npm install --save trowel-alerts
 
 # With yarn
 $ yarn add trowel-alerts

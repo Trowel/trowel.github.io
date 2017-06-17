@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Covers* by using npm, Yarn or Bower
+You can fetch *Trowel Covers* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-covers
+$ bower install --save trowel-covers
 
 # With npm
-$ npm install trowel-covers
+$ npm install --save trowel-covers
 
 # With yarn
 $ yarn add trowel-covers

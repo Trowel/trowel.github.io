@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Badges* by using npm, Yarn or Bower
+You can fetch *Trowel Badges* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-badges
+$ bower install --save trowel-badges
 
 # With npm
-$ npm install trowel-badges
+$ npm install --save trowel-badges
 
 # With yarn
 $ yarn add trowel-badges

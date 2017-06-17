@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Breadcrumbs* by using npm, Yarn or Bower
+You can fetch *Trowel Breadcrumbs* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-breadcrumbs
+$ bower install --save trowel-breadcrumbs
 
 # With npm
-$ npm install trowel-breadcrumbs
+$ npm install --save trowel-breadcrumbs
 
 # With yarn
 $ yarn add trowel-breadcrumbs

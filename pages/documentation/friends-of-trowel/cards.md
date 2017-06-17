@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Cards* by using npm, Yarn or Bower
+You can fetch *Trowel Cards* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-cards
+$ bower install --save trowel-cards
 
 # With npm
-$ npm install trowel-cards
+$ npm install --save trowel-cards
 
 # With yarn
 $ yarn add trowel-cards

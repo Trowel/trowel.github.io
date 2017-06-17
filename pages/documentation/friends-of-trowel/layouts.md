@@ -10,14 +10,14 @@ affix: true
 ## Download
 
 ### Download
-You can easily install trowel-layouts by using NPM or Bower with the name `trowel-layouts` (previously `friendsOfTrowel-Layouts-component`)
+You can fetch *Trowel Layouts* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-layouts
+$ bower install --save trowel-layouts
 
 # With npm
-$ npm install trowel-layouts
+$ npm install --save trowel-layouts
 
 # With yarn
 $ yarn add trowel-layouts

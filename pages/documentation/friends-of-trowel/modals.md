@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Modals* by using npm, Yarn or Bower
+You can fetch *Trowel Modals* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-modals
+$ bower install --save trowel-modals
 
 # With npm
-$ npm install trowel-modals
+$ npm install --save trowel-modals
 
 # With yarn
 $ yarn add trowel-modals

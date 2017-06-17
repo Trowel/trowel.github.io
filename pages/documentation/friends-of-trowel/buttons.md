@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install trowel-buttons by using NPM or Bower with the name `trowel-buttons` (previously `friendsOfTrowel-buttons-component`)
+You can fetch *Trowel Buttons* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-buttons
+$ bower install --save trowel-buttons
 
 # With npm
-$ npm install trowel-buttons
+$ npm install --save trowel-buttons
 
 # With yarn
 $ yarn add trowel-buttons

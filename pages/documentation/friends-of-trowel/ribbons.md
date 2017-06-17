@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel Ribbons* by using npm, Yarn or Bower
+You can fetch *Trowel Ribbons* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-ribbons
+$ bower install --save trowel-ribbons
 
 # With npm
-$ npm install trowel-ribbons
+$ npm install --save trowel-ribbons
 
 # With yarn
 $ yarn add trowel-ribbons

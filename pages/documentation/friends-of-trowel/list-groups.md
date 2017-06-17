@@ -9,14 +9,14 @@ affix: true
 
 ## Download
 
-You can easily install *Trowel List-groups* by using npm, Yarn or Bower
+You can fetch *Trowel List-groups* with *npm*, *yarn* or *bower*.
 
 ```bash
 # With bower
-$ bower install trowel-list-groups
+$ bower install --save trowel-list-groups
 
 # With npm
-$ npm install trowel-list-groups
+$ npm install --save trowel-list-groups
 
 # With yarn
 $ yarn add trowel-list-groups
