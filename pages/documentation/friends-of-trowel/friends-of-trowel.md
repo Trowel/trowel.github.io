@@ -2,7 +2,6 @@
 layout: documentation
 type: friendsoftrowel
 title: Friends of Trowel
-library: trowel/trowel
 permalink: /documentation/friends-of-trowel/
 affix: true
 ---

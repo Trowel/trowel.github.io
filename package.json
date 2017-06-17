@@ -6,8 +6,21 @@
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
+    "trowel-alerts": "^0.1.0",
+    "trowel-badges": "^0.1.0",
+    "trowel-breadcrumbs": "^0.2.1",
     "trowel-buttons": "^2.0.0",
-    "trowel-core": "^4.0.3"
+    "trowel-cards": "^0.2.0",
+    "trowel-collapses": "^1.0.0",
+    "trowel-core": "^4.0.3",
+    "trowel-covers": "^0.3.0",
+    "trowel-drops": "^2.0.1",
+    "trowel-forms": "^2.0.3",
+    "trowel-layouts": "^2.0.1",
+    "trowel-list-groups": "^0.1.0",
+    "trowel-modals": "^0.1.0",
+    "trowel-progress": "^0.1.1",
+    "trowel-ribbons": "^0.1.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",

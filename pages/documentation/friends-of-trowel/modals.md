@@ -2,11 +2,48 @@
 layout: documentation
 type: friendsoftrowel
 title: Modals
-library: friends-of-trowel/modals
+library: friendsOfTrowel/modals
 permalink: /documentation/friends-of-trowel/modals/
 affix: true
 ---
 
-##  Trowel-modals
+## Download
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+You can easily install *Trowel Modals* by using npm, Yarn or Bower
+
+```bash
+# With bower
+$ bower install trowel-modals
+
+# With npm
+$ npm install trowel-modals
+
+# With yarn
+$ yarn add trowel-modals
+```
+
+You can also download a zip archive [right here](https://github.com/FriendsOfTrowel/Modals/archive/master.zip).
+
+## Installation
+
+### *Scss*
+The main scss file to include to your main `.scss` file is located at the `./src/scss/modals.scss`. As a *Trowel Component*, it also requires two dependencies to compile the *scss* code. Here an *scss* installation snippet.
+
+```
+// Trowel Dependencies
+@import './path/to/dependencies/trowel-core/src/trowel';
+
+// Trowel Components Modals
+@import './path/to/dependencies/trowel-modals/src/scss/modals.scss';
+```
+
+### *JavaScript*
+You have several javascript files for different use cases :
+* The browser ready file is available at `./dest/javascript/modals.js` (a minified version exists at `dest/javascript/modals.min.js`)
+* The script written in es2015 and ready to `import` is available at `./src/javascript/modals.js`
+
+## Usage
+
+## Sass reference
+
+## Javascript reference

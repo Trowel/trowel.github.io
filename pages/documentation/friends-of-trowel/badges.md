@@ -2,11 +2,41 @@
 layout: documentation
 type: friendsoftrowel
 title: Trowel-badges
-library: friends-of-trowel/badges
+library: friendsOfTrowel/badges
 permalink: /documentation/friends-of-trowel/badges/
 affix: true
 ---
 
-##  Trowel-badges
+## Download
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+You can easily install *Trowel Badges* by using npm, Yarn or Bower
+
+```bash
+# With bower
+$ bower install trowel-badges
+
+# With npm
+$ npm install trowel-badges
+
+# With yarn
+$ yarn add trowel-badges
+```
+
+You can also download a zip archive [right here](https://github.com/FriendsOfTrowel/Badges/archive/master.zip).
+
+## Installation
+
+### *Scss*
+The main scss file to include to your main `.scss` file is located at the `./src/scss/badges.scss`. As a *Trowel Component*, it also requires two dependencies to compile the *scss* code. Here an *scss* installation snippet.
+
+```
+// Trowel Dependencies
+@import './path/to/dependencies/trowel-core/src/trowel';
+
+// Trowel Components Badges
+@import './path/to/dependencies/trowel-badges/src/scss/badges.scss';
+```
+
+## Usage
+
+## Sass reference
