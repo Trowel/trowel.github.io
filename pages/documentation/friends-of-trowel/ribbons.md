@@ -31,11 +31,11 @@ You can also download a zip archive [right here](https://github.com/FriendsOfTro
 The main scss file to include to your main `.scss` file is located at the `./src/scss/ribbons.scss`. As a *Trowel Component*, it also requires two dependencies to compile the *scss* code. Here an *scss* installation snippet.
 
 ```
-// Trowel Dependencies
+// Trowel core (need to be imported first)
 @import './path/to/dependencies/trowel-core/src/trowel';
 
-// Trowel Components Ribbons
-@import './path/to/dependencies/trowel-ribbons/src/scss/ribbons.scss';
+// Trowel Ribbons
+@import './path/to/dependencies/trowel-ribbons/src/scss/ribbons';
 ```
 
 

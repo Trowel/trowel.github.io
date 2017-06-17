@@ -30,11 +30,11 @@ You can also download a zip archive [right here](https://github.com/FriendsOfTro
 The main scss file to include to your main `.scss` file is located at the `./src/scss/modals.scss`. As a *Trowel Component*, it also requires two dependencies to compile the *scss* code. Here an *scss* installation snippet.
 
 ```
-// Trowel Dependencies
+// Trowel core (need to be imported first)
 @import './path/to/dependencies/trowel-core/src/trowel';
 
-// Trowel Components Modals
-@import './path/to/dependencies/trowel-modals/src/scss/modals.scss';
+// Trowel Modals
+@import './path/to/dependencies/trowel-modals/src/scss/modals';
 ```
 
 ### *JavaScript*
