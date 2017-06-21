@@ -14,7 +14,7 @@ Usually selectors are just strings. But with Trowel we need to be able to add mo
 
 That's why selectors are objects, this way we can set/get/append properties to our selectors in order to print it out dynamically depending of Trowel variables' flags.
 
-But objects do not exists in sass : selector object are in facts maps with as key what we call a property (and as a value... its value). Those selectors objects are created and manipuled with the function `selector()`.
+But objects do not exists in Sass : selector object are in facts maps with as key what we call a property (and as a value... its value). Those selectors objects are created and manipuled with the function `selector()`.
 
 ## Create our first selector object
 To initiate a selector object, we just require to set the *block* string of our selector (remember we are strongly committed to the BEM philosophy).

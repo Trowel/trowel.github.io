@@ -10,7 +10,7 @@ affix: false
 Let's see and check sereral things before learning how to use Trowel.
 
 ### Advanced Sass features
-Trowel is based on some key features of sass like `variables`, `mixins`, `functions`, `map`. Make sure to be confortable with sass before reading further.
+Trowel is based on some key features of scss like `variables`, `mixins`, `functions`, `map`. Make sure to be confortable with Sass before reading further.
 
 ### Atomic design
 Trowel is designed for a specific kind of methodology. It is a "component focus" framework which means it is made to design visual component independently that you will then assemble into a web page. This methodology is well known as **atomic design**. We strongly recommand you to read [this article](http://bradfrost.com/blog/post/atomic-web-design/) written by *Brad Frost* the creator of the Atomic Design.
