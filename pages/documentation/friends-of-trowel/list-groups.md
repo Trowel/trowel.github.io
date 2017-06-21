@@ -45,15 +45,13 @@ The main scss file to include to your main `.scss` file is located at the `./src
 
 You can override the global syntax config for a specific component with the following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$listgroups--syntax` | `null` | syntax config for `.list-group` |
 
 
 ### Component variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$listgroups--font-size` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;1rem,<br>&nbsp;&nbsp;'-xs':&nbsp;{{ page.trwl_theme.sizes.xs }}&nbsp;trwl-theme-size('xs'),<br>&nbsp;&nbsp;'-sm':&nbsp;{{ page.trwl_theme.sizes.sm }}&nbsp;trwl-theme-size('sm'),<br>&nbsp;&nbsp;'-lg':&nbsp;{{ page.trwl_theme.sizes.lg }}&nbsp;trwl-theme-size('lg'),<br>)</code> | sets the font-size property on `.list-group` |
 | `$listgroups--font-family` | `{{ page.trwl_theme.font_family }}` | sets the font-family property on `.list-group` |
 | `$listgroups--font-weight` | `null` | sets the font-weight property on `.list-group` |

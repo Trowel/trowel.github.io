@@ -54,15 +54,13 @@ The twig template ready to be `include` or `embed` is located at `./src/twig/bre
 
 You can override the global syntax config for a specific component with the following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs--syntax` | `null` | syntax config for `.breadcrumb` |
 
 
 ### Component variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs--responsive-breakpoint` | `'@sm'` | *not a trowel variable* |
 | `$breadcrumbs--font-size` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;0.7rem,<br>&nbsp;&nbsp;$breadcrumbs--responsive-breakpoint:&nbsp;1rem,<br>)</code> | sets the font-size property on `.breadcrumb` |
 | `$breadcrumbs--font-family` | `null` | sets the font-family property on `.breadcrumb` |
@@ -85,8 +83,7 @@ You can override the global syntax config for a specific component with the foll
 
 #### toggle
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs-toggle--padding` | `{{ page.trwl_theme.padding_y }} {{ page.trwl_theme.padding_x }}` | sets the padding property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--font-weight` | `null` | sets the font-weight property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--line-height` | `{{ page.trwl_theme.line_height }}` | sets the line-height property on `.breadcrumb__toggle` |
@@ -106,8 +103,7 @@ You can override the global syntax config for a specific component with the foll
 
 #### back
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs-back--padding` | `null` | sets the padding property on `.breadcrumb__back` |
 | `$breadcrumbs-back--font-weight` | `null` | sets the font-weight property on `.breadcrumb__back` |
 | `$breadcrumbs-back--line-height` | `{{ page.trwl_theme.line_height }}` | sets the line-height property on `.breadcrumb__back` |
@@ -126,23 +122,20 @@ You can override the global syntax config for a specific component with the foll
 
 #### list
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs-list--background-color` | `$breadcrumbs--background-color` | sets the background-color property on `.breadcrumb__list` |
 | `$breadcrumbs-list--transition` | `all 300ms ease-in-out` | sets the transition property on `.breadcrumb__list` |
 | `$breadcrumbs-list--hidden-transform` | `translateY(-25%)` | sets the transform property on `.breadcrumb__list` when the list is hidden |
 
 #### separator
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs-separator--content` | `'>'` | sets the separator content between to list items when the device resolution is higher than responsive breakpoint |
 | `$breadcrumbs-separator--margin-x` | `0.5em` | sets the left and right margin  |
 
 #### item
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$breadcrumbs-item--color` | `inherit` | sets the color property on `.breadcrumb__item` |
 | `$breadcrumbs-item--text-decoration` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;underline,<br>&nbsp;&nbsp;':hover':&nbsp;none,<br>&nbsp;&nbsp;':active':&nbsp;none,<br>&nbsp;&nbsp;':focus':&nbsp;none,<br>&nbsp;&nbsp;'~active':&nbsp;none,<br>)</code> | sets the text-decoration property on `.breadcrumb__item` |
 | `$breadcrumbs-item--font-style` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;italic,<br>&nbsp;&nbsp;'~active':&nbsp;initial,<br>)</code> | sets the font-style property on `.breadcrumb__item` |

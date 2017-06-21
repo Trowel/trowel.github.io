@@ -47,8 +47,7 @@ The main scss file to include to your main `.scss` file is located at the `./src
 
 You can override the global syntax config for a specific component with the following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$button--syntax` | `null` | syntax config for `.btn` |
 
 
@@ -56,8 +55,7 @@ You can override the global syntax config for a specific component with the foll
 
 You can avoid the generation of some css with those following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$buttongroup--enabled` | `true` | enable the generation of style rules for the `.btn-group` block |
 
 
@@ -65,8 +63,7 @@ You can avoid the generation of some css with those following variables
 
 #### Buttons
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$button--vertical-align` | `middle` | sets the vertical-align property |
 | `$button--float` | `null` | sets the float property |
 | `$button--display` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;inline-block,<br>&nbsp;&nbsp;'-block':&nbsp;block,<br>)</code> | sets the display property |
@@ -95,7 +92,6 @@ You can avoid the generation of some css with those following variables
 
 #### Btn-groups
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$buttongroup--justify-content` | `null` | sets the justify-content property on block `.btn-group` |
 | `$buttongroup-item--flex-grow` | `null` | sets the flex-grow property on a `.btn` inside a `.btn-group` block |

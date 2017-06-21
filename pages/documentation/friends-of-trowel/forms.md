@@ -48,8 +48,7 @@ The twig template ready to be `include` or `embed` is located at `./src/twig/For
 
 You can override the global syntax config for a specific component with the following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$form--syntax` | `null` | syntax config for `.form-group`, `.checkbox`, `.radio` and `.select` blocks |
 
 
@@ -57,8 +56,7 @@ You can override the global syntax config for a specific component with the foll
 
 You can avoid the generation of some css with those following variables
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$formgroup--enable` | `true` | enable the generation of style rules for the `.form-group` block |
 | `$checkbox--enable` | `true` | enable the generation of style rules for the `.checkbox` block |
 | `$radio--enable` | `true` | enable the generation of style rules for the `.radio` block |
@@ -69,8 +67,7 @@ You can avoid the generation of some css with those following variables
 
 #### Form group
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$formgroup--font-size` | {{ page.trwl_theme.sizes.md }} | sets the font-size property on `.form-group` |
 | `$formgroup--font-family` | null | sets the font-family property on `.form-group` |
 | `$formgroup--margin-bottom` | 2em | sets the margin-bottom property on `.form-group` |
@@ -120,8 +117,7 @@ You can avoid the generation of some css with those following variables
 
 #### Checkbox
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$checkbox--font-size` | `{{ page.trwl_theme.sizes.md }}` | sets the font-size property on `.checkbox` |
 | `$checkbox--line-height` | `null` | sets the line-height property on `.checkbox` |
 | `$checkbox--padding` | `null` | sets the padding property on `.checkbox` |
@@ -178,8 +174,7 @@ You can avoid the generation of some css with those following variables
 
 #### Radio
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$radio--font-size` | {{ page.trwl_theme.sizes.md }} | sets the font-size property on `.radio` |
 | `$radio--line-height` | null | sets the line-height property on `.radio` |
 | `$radio--padding` | null | sets the padding property on `.radio` |
@@ -236,8 +231,7 @@ You can avoid the generation of some css with those following variables
 
 #### Select
 
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+{% include doc/scss-reference-thead.md %}
 | `$select--color` | rgb(0, 0, 0) | sets the color property |
 | `$select--font-size` | {{ page.trwl_theme.sizes.md }} | sets the font-size property |
 | `$select--font-family` | null | sets the font-family property |
