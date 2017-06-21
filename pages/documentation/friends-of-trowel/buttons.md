@@ -63,7 +63,7 @@ You can avoid the generation of some css with those following variables
 
 ### Component variables
 
-### Buttons
+#### Buttons
 
 | variable | default value | description |
 | -------- | ------------- | ----------- |
@@ -93,7 +93,7 @@ You can avoid the generation of some css with those following variables
 | `$button--transition` | `null` | sets the transition property |
 | `$button--cursor` | `null` | sets the cursor property |
 
-### Btn-groups
+#### Btn-groups
 
 | variable | default value | description |
 | -------- | ------------- | ----------- |
