@@ -72,10 +72,8 @@ You can override the global syntax config for a specific component with the foll
 `$progress--padding` | `0 {{ page.trwl_theme.padding_x }}` | sets the padding property |
 `$progress--line-height` | `{{ page.trwl_theme.line_height }}` | sets the line-height property |
 `$progress--color` | `rgb(255, 255, 255)` | sets the color property |
-
-#### Bar
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Bar" %}
+{% include doc/scss-reference-tbody.md %}
 `$progress-bar--background-color` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;{{ page.trwl_theme.colors.primary }},<br>&nbsp;&nbsp;'-primary':&nbsp;{{ page.trwl_theme.colors.primary }},<br>&nbsp;&nbsp;'-success':&nbsp;{{ page.trwl_theme.colors.success }},<br>&nbsp;&nbsp;'-warning':&nbsp;{{ page.trwl_theme.colors.warning }},<br>&nbsp;&nbsp;'-danger':&nbsp;{{ page.trwl_theme.colors.danger }},<br>)</code> | sets the background-color property for `.progress__bar` |
 `$progress-bar--padding` | `{{ page.trwl_theme.padding_y }} {{ page.trwl_theme.padding_x }}` | sets the padding property for `.progress__bar` |
 `$progress-bar--font-size` | `0.8em` | sets the font-size property for `.progress__bar` |

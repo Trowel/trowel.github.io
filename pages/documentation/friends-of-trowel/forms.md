@@ -72,6 +72,8 @@ You can avoid the generation of some css with those following variables
 | `$formgroup--font-family` | null | sets the font-family property on `.form-group` |
 | `$formgroup--margin-bottom` | 2em | sets the margin-bottom property on `.form-group` |
 | `$formgroup--md-effet` | <code>(<br>&nbsp;&nbsp;'-md':&nbsp;true,<br>)</code> | sets style rules on `.form-group` for material design animation |
+{% include doc/inner-heading-table.md title="Label" %}
+{% include doc/scss-reference-tbody.md %}
 | `$formgroup-label--font-size` | 0.75em | sets the font-size property on `.form-group__label` |
 | `$formgroup-label--font-family` | null | sets the font-family property on `.form-group__label` |
 | `$formgroup-label--margin-bottom` | 0.5em | sets the margin-bottom property on `.form-group__label` |
@@ -81,6 +83,8 @@ You can avoid the generation of some css with those following variables
 | `$formgroup-label--font-style` | null | sets the font-style property on `.form-group__label` |
 | `$formgroup-label--font-weight` | null | sets the font-weight property on `.form-group__label` |
 | `$formgroup-label--text-transform` | null | sets the text-transform property on `.form-group__label` |
+{% include doc/inner-heading-table.md title="Input" %}
+{% include doc/scss-reference-tbody.md %}
 | `$formgroup-input--padding` | 0 0 0.5em | sets the padding property on `.form-group__input` |
 | `$formgroup-input--font-size` | 1em | sets the font-size property on `.form-group__input` |
 | `$formgroup-input--line-height` | {{ page.trwl_theme.line_height }} | sets the line-height property on `.form-group__input` |
@@ -95,6 +99,8 @@ You can avoid the generation of some css with those following variables
 | `$formgroup-input--font-weight` | null | sets the font-weight property on `.form-group__input` |
 | `$formgroup-input--text-transform` | null | sets the text-transform property on `.form-group__input` |
 | `$formgroup-input--outline` | (<br>&nbsp;&nbsp;':focus':&nbsp;0,<br>) | sets the outline property on `.form-group__input` |
+{% include doc/inner-heading-table.md title="Help" %}
+{% include doc/scss-reference-tbody.md %}
 | `$formgroup-help--margin` | 0.5em 0 0 | sets the margin property on `.form-group__help` |
 | `$formgroup-help--padding` | null | sets the padding property on `.form-group__help` |
 | `$formgroup-help--font-size` | 0.8em | sets the font-size property on `.form-group__help` |
@@ -125,6 +131,8 @@ You can avoid the generation of some css with those following variables
 | `$checkbox--font-style` | `null` | sets the font-style property on `.checkbox` |
 | `$checkbox--font-weight` | `null` | sets the font-weight property on `.checkbox` |
 | `$checkbox--text-transform` | `null` | sets the text-transform property on `.checkbox` |
+{% include doc/inner-heading-table.md title="Indicator" %}
+{% include doc/scss-reference-tbody.md %}
 | `$checkbox-indicator--size` | `1.25em` | sets the width and height properties on `.checkbox__indicator` |
 | `$checkbox-indicator--margin` | `0 0.5em 0 0` | sets the margin property on `.checkbox__indicator` |
 | `$checkbox-indicator--background-color` | `{{ page.trwl_theme.colors.gray_medium }}` | sets the background-color property on `.checkbox__indicator` |
@@ -140,6 +148,8 @@ You can avoid the generation of some css with those following variables
 | `$checkbox-indicator--transition-timing-function` | `null` | sets the transition-timing-function property on `.checkbox__indicator` |
 | `$checkbox-indicator--transition-duration` | `null` | sets the transition-duration property on `.checkbox__indicator` |
 | `$checkbox-indicator--box-shadow` | `null` | sets the box-shadow property on `.checkbox__indicator` |
+{% include doc/inner-heading-table.md title="Indicator::before" %}
+{% include doc/scss-reference-tbody.md %}
 | `$checkbox-indicator-before--width` | `0.875em` | sets the width property on `.checkbox__indicator:before` |
 | `$checkbox-indicator-before--height` | `0.875em` | sets the height property on `.checkbox__indicator:before` |
 | `$checkbox-indicator-before--background-color` | `transparent` | sets the background-color property on `.checkbox__indicator:before` |
@@ -155,6 +165,8 @@ You can avoid the generation of some css with those following variables
 | `$checkbox-indicator-before--transition-timing-function` | `null` | sets the transition-timing-function property on `.checkbox__indicator:before` |
 | `$checkbox-indicator-before--transition-duration` | `null` | sets the transition-duration property on `.checkbox__indicator:before` |
 | `$checkbox-indicator-before--box-shadow` | `null` | sets the box-shadow property on `.checkbox__indicator:before` |
+{% include doc/inner-heading-table.md title="Indicator::before checked" %}
+{% include doc/scss-reference-tbody.md %}
 | `$checkbox-indicator-checked-before--width` | `null` | sets the width property on `.checkbox__indicator:before` when the checkbox is checked |
 | `$checkbox-indicator-checked-before--height` | `null` | sets the height property on `.checkbox__indicator:before` when the checkbox is checked |
 | `$checkbox-indicator-checked-before--background-color` | `{{ page.trwl_theme.colors.primary }}` | sets the background-color property on `.checkbox__indicator:before` when the checkbox is checked |
@@ -182,6 +194,8 @@ You can avoid the generation of some css with those following variables
 | `$radio--font-style` | null | sets the font-style property on `.radio` |
 | `$radio--font-weight` | null | sets the font-weight property on `.radio` |
 | `$radio--text-transform` | null | sets the text-transform property on `.radio` |
+{% include doc/inner-heading-table.md title="Indicator" %}
+{% include doc/scss-reference-tbody.md %}
 | `$radio-indicator--size` | 1.25em | sets the width and height properties on `.radio__indicator` |
 | `$radio-indicator--margin` | 0 0.5em 0 0 | sets the margin property on `.radio__indicator` |
 | `$radio-indicator--background-color` | {{ page.trwl_theme.colors.gray_medium }} | sets the background-color property on `.radio__indicator` |
@@ -197,6 +211,8 @@ You can avoid the generation of some css with those following variables
 | `$radio-indicator--transition-timing-function` | null | sets the transition-timing-function property on `.radio__indicator` |
 | `$radio-indicator--transition-duration` | null | sets the transition-duration property on `.radio__indicator` |
 | `$radio-indicator--box-shadow` | null | sets the box-shadow property on `.radio__indicator` |
+{% include doc/inner-heading-table.md title="Indicator::before" %}
+{% include doc/scss-reference-tbody.md %}
 | `$radio-indicator-before--width` | 0.875em | sets the width property on `.radio__indicator:before` |
 | `$radio-indicator-before--height` | 0.875em | sets the height property on `.radio__indicator:before` |
 | `$radio-indicator-before--background-color` | transparent | sets the background-color property on `.radio__indicator:before` |
@@ -212,6 +228,8 @@ You can avoid the generation of some css with those following variables
 | `$radio-indicator-before--transition-timing-function` | null | sets the transition-timing-function property on `.radio__indicator:before` |
 | `$radio-indicator-before--transition-duration` | null | sets the transition-duration property on `.radio__indicator:before` |
 | `$radio-indicator-before--box-shadow` | null | sets the box-shadow property on `.radio__indicator:before` |
+{% include doc/inner-heading-table.md title="Indicator::before checked" %}
+{% include doc/scss-reference-tbody.md %}
 | `$radio-indicator-checked-before--width` | null | sets the width property on `.radio__indicator:before` when the checkbox is checked |
 | `$radio-indicator-checked-before--height` | null | sets the height property on `.radio__indicator:before` when the checkbox is checked |
 | `$radio-indicator-checked-before--background-color` | {{ page.trwl_theme.colors.primary }} | sets the background-color property on `.radio__indicator:before` when the checkbox is checked |
@@ -248,6 +266,8 @@ You can avoid the generation of some css with those following variables
 | `$select--line-height` | null | sets the line-height property |
 | `$select--background-color` | {{ page.trwl_theme.colors.gray_medium }} | sets the background-color property |
 | `$select--cursor` | pointer | sets the cursor property |
+{% include doc/inner-heading-table.md title="Caret" %}
+{% include doc/scss-reference-tbody.md %}
 | `$select-caret--method` | 'css' |  sets if the caret design is made of a css triangle or background-image. Can be `'css'` or `'image'` |
 | `$select-caret--width` | 0.7em | sets the caret width |
 | `$select-caret--height` | 0.4em | sets the caret height |

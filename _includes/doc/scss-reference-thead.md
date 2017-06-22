@@ -1,2 +1,2 @@
-| variable | default value | description |
-| -------- | ------------- | ----------- |
+| **VARIABLE** | **DEFAULT VALUE** | **DESCRIPTION** |
+| ------------ | ----------------- | --------------- |

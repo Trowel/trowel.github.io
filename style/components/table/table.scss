@@ -8,7 +8,7 @@ table {
   -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
   display: block;
   font-size: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 table tbody tr:nth-of-type(odd) {
@@ -39,4 +39,12 @@ td, th {
 
 table tr > td:nth-child(4) {
   min-width: 18rem;
+}
+
+.table__inner-heading {
+  display: inline-block;
+  padding-top: 2em;
+  font-weight: 700;
+  font-size: 1.15em;
+  font-style: italic;
 }

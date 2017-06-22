@@ -92,11 +92,8 @@ You can avoid the generation of some css with those following variables
 | `$alerts--height` | `null` | sets the height property |
 | `$alerts--max-width` | `null` | sets the max-width property |
 | `$alerts--max-height` | `null` | sets the max-height property |
-
-
-#### Times
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Times" %}
+{% include doc/scss-reference-tbody.md %}
 | `$alerts-times--opacity` | `null` | sets the opacity property for `.alert__times` |
 | `$alerts-times--float` | `right` | sets the float property for `.alert__times` |
 | `$alerts-times--font-size` | `inherit` | sets the font-size property for `.alert__times` |

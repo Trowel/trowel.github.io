@@ -1,0 +1,1 @@
+| <span class="table__inner-heading">{{ include.title }}</span> |

@@ -63,8 +63,6 @@ You can avoid the generation of some css with those following variables
 
 ### Component variables
 
-#### Collapses
-
 {% include doc/scss-reference-thead.md %}
 | `$collapses--font-size` | `1rem` | sets the font-size property |
 | `$collapses--font-family` | `null` | sets the font-family property |
@@ -107,10 +105,8 @@ You can avoid the generation of some css with those following variables
 | `$accordions--background-color` | `null` | sets the background-color property |
 | `$accordions--padding-x` | `null` | sets the left and right padding properties |
 | `$accordions--padding-y` | `null` | sets the top and bottom padding properties |
-
-##### Anchors
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Anchors" %}
+{% include doc/scss-reference-tbody.md %}
 | `$accordions-anchor--font-size` | `null` | sets the font-size property for `.accordion__anchor` |
 | `$accordions-anchor--font-family` | `null` | sets the font-family property for `.accordion__anchor` |
 | `$accordions-anchor--font-weight` | `null` | sets the font-weight property for `.accordion__anchor` |
@@ -130,11 +126,8 @@ You can avoid the generation of some css with those following variables
 | `$accordions-anchor--background-color` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;{{ page.trwl_theme.colors.primary }},<br>&nbsp;&nbsp;':hover':&nbsp;lighten({{ page.trwl_theme.colors.primary }},&nbsp;5%),<br>&nbsp;&nbsp;':active':&nbsp;lighten({{ page.trwl_theme.colors.primary }},&nbsp;5%),<br>&nbsp;&nbsp;':focus':&nbsp;lighten({{ page.trwl_theme.colors.primary }},&nbsp;5%),<br>&nbsp;&nbsp;'~active':&nbsp;(<br>&nbsp;&nbsp;&nbsp;&nbsp;'default':&nbsp;{{ page.trwl_theme.colors.dan__anchorger }},<br>&nbsp;&nbsp;&nbsp;&nbsp;':hover':&nbsp;lighten({{ page.trwl_theme.colors.danger }},&nbsp;5%),<br>&nbsp;&nbsp;&nbsp;&nbsp;':active':&nbsp;lighten({{ page.trwl_theme.colors.danger }},&nbsp;5%),<br>&nbsp;&nbsp;&nbsp;&nbsp;':focus':&nbsp;lighten({{ page.trwl_theme.colors.danger }},&nbsp;5%),<br>&nbsp;&nbsp;)<br>)</code> | sets the background-color property for `.accordion__anchor` |
 | `$accordions-anchor--padding-x` | `{{ page.trwl_theme.padding_x }}` | sets the left and right padding properties for `.accordion__anchor` |
 | `$accordions-anchor--padding-y` | `{{ page.trwl_theme.padding_y }}` | sets the top and bottom padding properties for `.accordion__anchor` |
-
-
-##### Collapses
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Collapses" %}
+{% include doc/scss-reference-tbody.md %}
 | `$accordion-collapse--font-size` | `null` | sets the font-size property for `.accordion__collapse` |
 | `$accordion-collapse--font-family` | `null` | sets the font-family property for `.accordion__collapse` |
 | `$accordion-collapse--font-weight` | `null` | sets the font-weight property for `.accordion__collapse` |
@@ -157,9 +150,8 @@ You can avoid the generation of some css with those following variables
 
 #### Tabs
 
-##### Tab navs
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Tab navs" %}
+{% include doc/scss-reference-tbody.md %}
 | `$tabsnavs--font-size` | `{{ page.trwl_theme.sizes.md }}` | sets the font-size property for `.tab-nav` |
 | `$tabsnavs--font-family` | `{{ page.trwl_theme.font_family }}` | sets the font-family property for `.tab-nav` |
 | `$tabsnavs--font-weight` | `null` | sets the font-weight property for `.tab-nav` |
@@ -178,15 +170,11 @@ You can avoid the generation of some css with those following variables
 | `$tabsnavs--background` | `null` | sets the background property for `.tab-nav` |
 | `$tabsnavs--background-color` | `{{ page.trwl_theme.colors.primary }}` | sets the background-color property for `.tab-nav` |
 | `$tabsnavs--padding` | `{{ page.trwl_theme.padding_y }} ({{ page.trwl_theme.padding_x }} / 2) 0` | sets the padding property for `.tab-nav` |
-
-##### Tab navs item
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Tab navs item" %}
+{% include doc/scss-reference-tbody.md %}
 | `$tabsnavs-item--gutter` | `1em` | sets the pod property for `.tab-nav` |
-
-##### Tab navs anchor
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Tab navs item" %}
+{% include doc/scss-reference-tbody.md %}
 | `$tabsnavs-anchor--font-size` | `null` | sets the font-size property for `.tab-nav` |
 | `$tabsnavs-anchor--font-family` | `null` | sets the font-family property for `.tab-nav` |
 | `$tabsnavs-anchor--font-weight` | `null` | sets the font-weight property for `.tab-nav` |
@@ -205,10 +193,8 @@ You can avoid the generation of some css with those following variables
 | `$tabsnavs-anchor--background-color` | `null` | sets the background-color property for `.tab-nav` |
 | `$tabsnavs-anchor--background` | <code>(<br>&nbsp;&nbsp;'~active':&nbsp;rgb(255,&nbsp;255,&nbsp;255),<br>)</code> | sets the background property for `.tab-nav` |
 | `$tabsnavs-anchor--box-shadow` | `null` | sets the box-shadow property for `.tab-nav` |
-
-
-##### Tab collapses
-
+{% include doc/inner-heading-table.md title="Tab collapses" %}
+{% include doc/scss-reference-tbody.md %}
 | `$tabscollapses--font-size` | `{{ page.trwl_theme.sizes.md }}` | sets the font-size property for `.tab-collapse` |
 | `$tabscollapses--font-family` | `{{ page.trwl_theme.font_family }}` | sets the font-family property for `.tab-collapse` |
 | `$tabscollapses--font-weight` | `null` | sets the font-weight property for `.tab-collapse` |

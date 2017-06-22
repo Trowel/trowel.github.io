@@ -80,23 +80,17 @@ You can override the global syntax config for a specific component with the foll
 | `$covers--height` | `null` | sets the height property |
 | `$covers--min-height` | `18.75em` | sets the min-height property |
 | `$covers--max-height` | `null` | sets the max-height property |
-
-#### Overlay
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Overlay" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-overlay--background` | `null` | sets the background property for `.cover__overlay` |
 | `$covers-overlay--background-color` | <code>(<br>&nbsp;&nbsp;'-overlaid':&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.6),<br>)</code> | sets the background-color property for `.cover__overlay` |
 | `$covers-overlay--opacity` | `null` | sets the opacity property for `.cover__overlay` |
-
-#### Image
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Image" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-image--opacity` | `null` | sets the opacity property for `.cover__image` |
 | `$covers-image--object-fit` | `cover` | sets the object-fit property for `.cover__image` |
-
-#### Content
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Content" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-content--font-size` | `null` | sets the font-size property for `.cover__content` |
 | `$covers-content--font-family` | `null` | sets the font-family property for `.cover__content` |
 | `$covers-content--font-weight` | `null` | sets the font-weight property for `.cover__content` |
@@ -112,10 +106,8 @@ You can override the global syntax config for a specific component with the foll
 | `$covers-content--background-color` | `null` | sets the background-color property for `.cover__content` |
 | `$covers-content--width` | `null` | sets the width property for `.cover__content` |
 | `$covers-content--max-width` | `75em` | sets the max-width property for `.cover__content` |
-
-#### Header
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Header" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-header--font-size` | `null` | sets the font-size property for `.cover__header` |
 | `$covers-header--font-family` | `null` | sets the font-family property for `.cover__header` |
 | `$covers-header--font-weight` | `null` | sets the font-weight property for `.cover__header` |
@@ -133,10 +125,8 @@ You can override the global syntax config for a specific component with the foll
 | `$covers-header--max-height` | `null` | sets the max-height property for `.cover__header` |
 | `$covers-header--width` | `null` | sets the width property for `.cover__header` |
 | `$covers-header--max-width` | `null` | sets the max-width property for `.cover__header` |
-
-#### Body
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Body" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-body--font-size` | `null` | sets the font-size property for `.cover__body` |
 | `$covers-body--font-family` | `null` | sets the font-family property for `.cover__body` |
 | `$covers-body--font-weight` | `null` | sets the font-weight property for `.cover__body` |
@@ -154,10 +144,8 @@ You can override the global syntax config for a specific component with the foll
 | `$covers-body--max-height` | `null` | sets the max-height property for `.cover__body` |
 | `$covers-body--width` | `null` | sets the width property for `.cover__body` |
 | `$covers-body--max-width` | `null` | sets the max-width property for `.cover__body` |
-
-#### Footer
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Footer" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-footer--font-size` | `null` | sets the font-size property for `.cover__footer` |
 | `$covers-footer--font-family` | `null` | sets the font-family property for `.cover__footer` |
 | `$covers-footer--font-weight` | `null` | sets the font-weight property for `.cover__footer` |
@@ -175,10 +163,8 @@ You can override the global syntax config for a specific component with the foll
 | `$covers-footer--max-height` | `null` | sets the max-height property for `.cover__footer` |
 | `$covers-footer--width` | `null` | sets the width property for `.cover__footer` |
 | `$covers-footer--max-width` | `null` | sets the max-width property for `.cover__footer` |
-
-#### Scroll button
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Scroll button" %}
+{% include doc/scss-reference-tbody.md %}
 | `$covers-button--vertical-align` | `middle` | sets the vertical-align property for `.cover__scroll-btn` |
 | `$covers-button--float` | `null` | sets the float property for `.cover__scroll-btn` |
 | `$covers-button--display` | `inline-block` | sets the display property for `.cover__scroll-btn` |

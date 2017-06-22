@@ -1,0 +1,1 @@
+| **VARIABLE** | **DEFAULT VALUE** | **DESCRIPTION** |

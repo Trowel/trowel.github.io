@@ -60,8 +60,6 @@ You can avoid the generation of some css with those following variables
 
 ### Component variables
 
-#### Buttons
-
 {% include doc/scss-reference-thead.md %}
 | `$button--vertical-align` | `middle` | sets the vertical-align property |
 | `$button--float` | `null` | sets the float property |

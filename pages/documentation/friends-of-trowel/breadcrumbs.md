@@ -80,10 +80,8 @@ You can override the global syntax config for a specific component with the foll
 | `$breadcrumbs--box-shadow` | `null` | sets the box-shadow property on `.breadcrumb` |
 | `$breadcrumbs--background` | `null` | sets the background property on `.breadcrumb` |
 | `$breadcrumbs--background-color` | `{{ page.trwl_theme.colors.primary }}` | sets the background-color property on `.breadcrumb` |
-
-#### toggle
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Toggle" %}
+{% include doc/scss-reference-tbody.md %}
 | `$breadcrumbs-toggle--padding` | `{{ page.trwl_theme.padding_y }} {{ page.trwl_theme.padding_x }}` | sets the padding property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--font-weight` | `null` | sets the font-weight property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--line-height` | `{{ page.trwl_theme.line_height }}` | sets the line-height property on `.breadcrumb__toggle` |
@@ -100,10 +98,8 @@ You can override the global syntax config for a specific component with the foll
 | `$breadcrumbs-toggle--text-transform` | `null` | sets the text-transform property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--text-decoration` | `null` | sets the text-decoration property on `.breadcrumb__toggle` |
 | `$breadcrumbs-toggle--box-shadow` | `null` | sets the box-shadow property on `.breadcrumb__toggle` |
-
-#### back
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Back" %}
+{% include doc/scss-reference-tbody.md %}
 | `$breadcrumbs-back--padding` | `null` | sets the padding property on `.breadcrumb__back` |
 | `$breadcrumbs-back--font-weight` | `null` | sets the font-weight property on `.breadcrumb__back` |
 | `$breadcrumbs-back--line-height` | `{{ page.trwl_theme.line_height }}` | sets the line-height property on `.breadcrumb__back` |
@@ -119,23 +115,17 @@ You can override the global syntax config for a specific component with the foll
 | `$breadcrumbs-back--text-transform` | `null` | sets the text-transform property on `.breadcrumb__back` |
 | `$breadcrumbs-back--text-decoration` | <code>(<br>&nbsp;&nbsp;':hover':&nbsp;underline,<br>&nbsp;&nbsp;':active':&nbsp;underline,<br>&nbsp;&nbsp;':focus':&nbsp;underline,<br>)</code> | sets the text-decoration property on `.breadcrumb__back` |
 | `$breadcrumbs-back--box-shadow` | `null` | sets the box-shadow property on `.breadcrumb__back` |
-
-#### list
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="List" %}
+{% include doc/scss-reference-tbody.md %}
 | `$breadcrumbs-list--background-color` | `$breadcrumbs--background-color` | sets the background-color property on `.breadcrumb__list` |
 | `$breadcrumbs-list--transition` | `all 300ms ease-in-out` | sets the transition property on `.breadcrumb__list` |
 | `$breadcrumbs-list--hidden-transform` | `translateY(-25%)` | sets the transform property on `.breadcrumb__list` when the list is hidden |
-
-#### separator
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Separator" %}
+{% include doc/scss-reference-tbody.md %}
 | `$breadcrumbs-separator--content` | `'>'` | sets the separator content between to list items when the device resolution is higher than responsive breakpoint |
 | `$breadcrumbs-separator--margin-x` | `0.5em` | sets the left and right margin  |
-
-#### item
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Item" %}
+{% include doc/scss-reference-tbody.md %}
 | `$breadcrumbs-item--color` | `inherit` | sets the color property on `.breadcrumb__item` |
 | `$breadcrumbs-item--text-decoration` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;underline,<br>&nbsp;&nbsp;':hover':&nbsp;none,<br>&nbsp;&nbsp;':active':&nbsp;none,<br>&nbsp;&nbsp;':focus':&nbsp;none,<br>&nbsp;&nbsp;'~active':&nbsp;none,<br>)</code> | sets the text-decoration property on `.breadcrumb__item` |
 | `$breadcrumbs-item--font-style` | <code>(<br>&nbsp;&nbsp;'default':&nbsp;italic,<br>&nbsp;&nbsp;'~active':&nbsp;initial,<br>)</code> | sets the font-style property on `.breadcrumb__item` |

@@ -67,6 +67,8 @@ You can override the global syntax config for a specific component with the foll
 | `$listgroups--background` | `null` | sets the background property on `.list-group` |
 | `$listgroups--background-color` | `null` | sets the background-color property on `.list-group` |
 | `$listgroups--max-width` | `null` | sets the max-width property on `.list-group` |
+{% include doc/inner-heading-table.md title="Item" %}
+{% include doc/scss-reference-tbody.md %}
 | `$listgroups-item--font-size` | `null` | sets the font-size property on `.list-group__item` |
 | `$listgroups-item--font-family` | `null` | sets the font-family property on `.list-group__item` |
 | `$listgroups-item--font-weight` | `null` | sets the font-weight property on `.list-group__item` |

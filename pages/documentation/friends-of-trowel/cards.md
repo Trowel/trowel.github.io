@@ -73,24 +73,18 @@ You can override the global syntax config for a specific component with the foll
 | `$cards--background-color` | `rgb(255, 255, 255)` | sets the background-color property |
 | `$cards--box-shadow` | `null` | sets the box-shadow property |
 | `$cards--background` | `null` | sets the background property |
-
-#### Cover
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Cover" %}
+{% include doc/scss-reference-tbody.md %}
 | `$card-cover--height` | `9.375em` | sets the height property for `.card__cover` |
-
-#### Block
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Block" %}
+{% include doc/scss-reference-tbody.md %}
 | `$card-block--padding` | `1em` | sets the padding property for `.card__block` |
 | `$card-block--text-align` | `null` | sets the text-align property for `.card__block` |
 | `$card-block--flex-basis` | `null` | sets the flex-basis property for `.card__block` |
 | `$card-block--flex-shrink` | `null` | sets the flex-shrink property for `.card__block` |
 | `$card-block--flex-grow` | `1` | sets the flex-grow property for `.card__block` |
-
-#### Heading
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Heading" %}
+{% include doc/scss-reference-tbody.md %}
 | `$card-heading--margin` | `0 0 1em` | sets the margin property for `.card__heading` |
 | `$card-heading--font-size` | `null` | sets the font-size property for `.card__heading` |
 | `$card-heading--font-weight` | `null` | sets the font-weight property for `.card__heading` |
@@ -100,10 +94,8 @@ You can override the global syntax config for a specific component with the foll
 | `$card-heading--text-align` | `null` | sets the text-align property for `.card__heading` |
 | `$card-heading--text-decoration` | `null` | sets the text-decoration property for `.card__heading` |
 | `$card-heading--color` | <code>(<br>&nbsp;&nbsp;'-primary':&nbsp;{{ page.trwl_theme.colors.primary }},<br>&nbsp;&nbsp;'-success':&nbsp;{{ page.trwl_theme.colors.success }},<br>&nbsp;&nbsp;'-warning':&nbsp;{{ page.trwl_theme.colors.warning }},<br>&nbsp;&nbsp;'-danger':&nbsp;{{ page.trwl_theme.colors.danger }},<br>)</code> | sets the color property for `.card__heading` |
-
-#### Paragraph
-
-{% include doc/scss-reference-thead.md %}
+{% include doc/inner-heading-table.md title="Paragraph" %}
+{% include doc/scss-reference-tbody.md %}
 | `$card-paragraph--margin` | `0 0 1em` | sets the margin property for `.card__paragraph` |
 | `$card-paragraph--font-size` | `null` | sets the font-size property for `.card__paragraph` |
 | `$card-paragraph--font-weight` | `null` | sets the font-weight property for `.card__paragraph` |
