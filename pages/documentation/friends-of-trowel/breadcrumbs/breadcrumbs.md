@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Breadcrumbs
 library: friendsOfTrowel/breadcrumbs
 permalink: /documentation/friends-of-trowel/breadcrumbs/
-affix: true
 ---
 
 {% include_relative _download.md %}

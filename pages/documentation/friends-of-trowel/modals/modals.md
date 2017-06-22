@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Modals
 library: friendsOfTrowel/modals
 permalink: /documentation/friends-of-trowel/modals/
-affix: true
 ---
 
 {% include_relative _download.md %}

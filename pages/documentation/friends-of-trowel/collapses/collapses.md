@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Collapses
 library: friendsOfTrowel/collapses
 permalink: /documentation/friends-of-trowel/collapses/
-affix: true
 ---
 
 {% include_relative _download.md %}

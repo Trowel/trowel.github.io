@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: List-groups
 library: friendsOfTrowel/list-groups
 permalink: /documentation/friends-of-trowel/list-groups/
-affix: true
 ---
 
 {% include_relative _download.md %}

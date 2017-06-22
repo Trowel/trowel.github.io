@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Customize a trowel component
-library: trowel/trowel
 permalink: /documentation/trowel-core/use-a-component/customize/
-affix: true
 ---
 
 Everything is set up, we can now customize our *Trowel Component* with the *Trowel variables*.

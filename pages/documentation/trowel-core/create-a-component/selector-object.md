@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Create a selector object
-library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/selector-object/
-affix: true
 ---
 
 Before writing blocks of property and values, we have to set up selectors that will target DOM elements.

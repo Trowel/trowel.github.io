@@ -1,8 +1,5 @@
 ---
-layout: documentation
-type: trowel
 title: Getting started
-library: trowel/trowel
 permalink: /documentation/trowel-core/getting-started/
 affix: false
 ---

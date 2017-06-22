@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Cards
 library: friendsOfTrowel/cards
 permalink: /documentation/friends-of-trowel/cards/
-affix: true
 ---
 
 {% include_relative _download.md %}

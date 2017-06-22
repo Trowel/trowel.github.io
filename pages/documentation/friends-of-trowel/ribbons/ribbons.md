@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Ribbons
 library: friendsOfTrowel/ribbons
 permalink: /documentation/friends-of-trowel/ribbons/
-affix: true
 ---
 
 {% include_relative _download.md %}

@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Drops
 library: friendsOfTrowel/drops
 permalink: /documentation/friends-of-trowel/drops/
-affix: true
 ---
 
 {% include_relative _download.md %}

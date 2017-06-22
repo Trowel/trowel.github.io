@@ -25,7 +25,10 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      hello: world
+      layout: documentation
+      affix: true
+      library: trowel/trowel
+      type: trowel
       trwl_theme:
         colors:
           gray_light: rgb(248, 248, 250)

@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Write statements
-library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/statements/
-affix: true
 ---
 
 In CSS we call *statement* a rule set comprising a selector followed by a declaration block.

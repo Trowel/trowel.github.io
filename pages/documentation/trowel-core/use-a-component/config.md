@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Set your global configuration
-library: trowel/trowel
 permalink: /documentation/trowel-core/use-a-component/config/
-affix: true
 ---
 
 *Trowel* allows you to control the selector that will be generated into css, and through the variable `$trowel-config` you can set selector syntax options or the responsive breakpoints used.

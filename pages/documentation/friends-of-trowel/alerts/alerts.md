@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Alerts
 library: friendsOfTrowel/alerts
 permalink: /documentation/friends-of-trowel/alerts/
-affix: true
 ---
 
 {% include_relative _download.md %}

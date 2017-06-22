@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Install a trowel component
-library: trowel/trowel
 permalink: /documentation/trowel-core/use-a-component/install/
-affix: true
 ---
 
 

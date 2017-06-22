@@ -1,10 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Trowel-badges
 library: friendsOfTrowel/badges
 permalink: /documentation/friends-of-trowel/badges/
-affix: true
 ---
 
 {% include_relative _download.md %}

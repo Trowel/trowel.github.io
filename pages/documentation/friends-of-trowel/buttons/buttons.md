@@ -1,11 +1,8 @@
 ---
-layout: documentation
 type: friendsoftrowel
 title: Buttons
 library: friendsOfTrowel/buttons
 permalink: /documentation/friends-of-trowel/buttons/
-affix: true
-foo: bar
 ---
 
 {% include_relative _download.md %}

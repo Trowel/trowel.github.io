@@ -1,8 +1,5 @@
 ---
-layout: documentation
-type: trowel
 title: Use a trowel component
-library: trowel/trowel
 permalink: /documentation/trowel-core/use-a-component/
 affix: false
 ---

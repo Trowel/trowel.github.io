@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Use the Component Generator
-library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/generator/
-affix: true
 ---
 
 The Component Generator allows you to quickly create a Trowel Component following the Trowel guidelines.

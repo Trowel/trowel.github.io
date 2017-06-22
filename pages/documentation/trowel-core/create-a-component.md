@@ -1,8 +1,5 @@
 ---
-layout: documentation
-type: trowel
 title: Create a trowel component
-library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/
 affix: false
 ---

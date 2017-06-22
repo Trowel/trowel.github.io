@@ -1,10 +1,6 @@
 ---
-layout: documentation
-type: trowel
 title: Define a trowel mixin
-library: trowel/trowel
 permalink: /documentation/trowel-core/create-a-component/mixins/
-affix: true
 ---
 
 In the `statement()` mixin, the declaration is the binding of one Trowel variable to a property. But if you want to make some calculation on the result of the variable, or if you want to apply its value to several properties you will have to make *Trowel mixins*.
