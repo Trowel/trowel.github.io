@@ -85,3 +85,22 @@ You can also create a grid with flexbox. Wrap your columns with a `.flex-grid` D
     </div>
   </div>
 </div>
+```html
+<div class="flex-grid">
+  <div class="flex-grid__col">
+    <div class="grid-showoff">col</div>
+  </div>
+
+  <div class="flex-grid__col flex-grid__col--grow-1">
+    <div class="grid-showoff">col</div>
+  </div>
+
+  <div class="flex-grid__col">
+    <div class="grid-showoff">col</div>
+  </div>
+
+  <div class="flex-grid__col">
+    <div class="grid-showoff">col</div>
+  </div>
+</div>
+```

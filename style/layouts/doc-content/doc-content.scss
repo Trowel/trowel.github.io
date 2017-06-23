@@ -60,11 +60,11 @@
   z-index: -1;
 }
 
-#doc-content ul {
+#doc-content ul:not(.list-group) {
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
-#doc-content li {
+#doc-content li:not(.list-group__item) {
   margin-bottom: 0.5rem;
 }
