@@ -3,7 +3,7 @@
 @import './utils/variables';
 
 .preview {
-  border: 1px solid color('gray-medium');
+  border: $preview--border;
   padding: 1rem;
   margin-bottom: $preview--margin-bottom;
 }

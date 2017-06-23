@@ -1,0 +1,8 @@
+@import '../../utils/colors';
+
+.grid-showoff {
+  @include color('white');
+  @include background-color('danger');
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}

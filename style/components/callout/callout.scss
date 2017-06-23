@@ -6,10 +6,8 @@
   border-left: 2px solid;
 }
 
-.callout--default {
-  border-color: color('success');
-}
-
-.callout--alert {
-  border-color: color('warning');
+@each $theme in ('success', 'primary', 'warning', 'danger') {
+  .callout--#{$theme} {
+    border-color: color($theme);
+  }
 }
