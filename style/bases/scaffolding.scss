@@ -24,7 +24,7 @@ body {
 }
 
 
-a {
+a:not(.btn) {
   text-decoration: none;
 
   &,

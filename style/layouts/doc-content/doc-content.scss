@@ -35,7 +35,7 @@
 }
 
 
-#doc-content a {
+#doc-content a:not(.btn) {
   display: inline-block;
   position: relative;
 
