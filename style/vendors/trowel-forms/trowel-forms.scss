@@ -1,1 +1,6 @@
 @import '../../../node_modules/trowel-forms/src/scss/forms';
+
+.checkbox,
+.radio {
+  line-height: initial;
+}
