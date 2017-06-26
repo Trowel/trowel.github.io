@@ -300,11 +300,52 @@ var _breadcrumbs = __webpack_require__(2);
 
 var _breadcrumbs2 = _interopRequireDefault(_breadcrumbs);
 
+var _alerts = __webpack_require__(4);
+
+var _alerts2 = _interopRequireDefault(_alerts);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var menus = new _menu2.default(document.querySelectorAll('[data-flag="menu"]'));
 var affix = new _affix2.default();
+
+// Trowel components
 var breadcrumbs = new _breadcrumbs2.default(document.querySelectorAll('[data-flag="breadcrumb"]'));
+var alerts = new _alerts2.default(document.querySelectorAll('.alert'));
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+class TrowelAlerts {
+  constructor(elements) {
+    elements.forEach(function(element, index) {
+      let element_obj = new TrowelAlert(element);
+    })
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["default"] = TrowelAlerts;
+
+
+class TrowelAlert {
+  constructor(element) {
+    this.element = element;
+    this.timesCollection = [].slice.call(this.element.querySelectorAll('[data-alert="times"]'));
+    return this.listener();
+  }
+
+  removeAlert() {
+    return this.element.remove();
+  }
+
+  listener() {
+    return this.timesCollection
+      .map(times => times.addEventListener('click', this.removeAlert.bind(this)));
+  }
+}
+
 
 /***/ })
 /******/ ]);
