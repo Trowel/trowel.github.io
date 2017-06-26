@@ -1,1 +1,13 @@
 @import '../../../node_modules/trowel-drops/src/scss/drops';
+@import '../../utils/selectors';
+
+.drop__anchor::before {
+  content: none;
+}
+
+.drop__anchor {
+  @include on-events {
+    color: initial;
+    text-decoration: none !important;
+  }
+}
