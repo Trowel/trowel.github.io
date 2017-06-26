@@ -152,6 +152,8 @@ here is the list of the options you can set :
 
 ### Twig usage
 
+Instead of writing html, you can `embed` the twig template :
+
 ```twig{% raw %}
 {% embed "path/to/trowel-covers/src/twig/cover.html.twig" with {
   'img': '...',
@@ -167,7 +169,7 @@ here is the list of the options you can set :
   If you want to remove it, just override the `footer` block.
 </p>
 
-If you want to add some `modifiers` on the block selector (`.breadcrumb`), you can set the array modifiers with as many modifiers as you need :
+If you want to add some `modifiers` on the block selector (`.cover`), you can set the array modifiers with as many modifiers as you need :
 
 ```twig{% raw %}
 {% embed "path/to/trowel-covers/src/twig/cover.html.twig" with {
