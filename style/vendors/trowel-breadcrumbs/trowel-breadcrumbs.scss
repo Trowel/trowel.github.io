@@ -1,1 +1,9 @@
 @import '../../../node_modules/trowel-breadcrumbs/src/scss/breadcrumbs';
+
+.breadcrumb__list-item {
+  margin-bottom: 0;
+}
+
+.breadcrumb__item::before {
+  content: none;
+}

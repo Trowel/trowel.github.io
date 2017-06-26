@@ -19,7 +19,7 @@ $fot--color: 'danger';
   border-color: color($fot--color);
 }
 
-.fot-page .doc-sidebar__menu .active {
+.fot-page .doc-sidebar__menu a.active {
   @include color($fot--color);
 }
 

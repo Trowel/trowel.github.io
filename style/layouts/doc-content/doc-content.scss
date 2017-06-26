@@ -33,38 +33,3 @@
 #doc-content > *:first-child {
   padding-top: $doccontent--padding;
 }
-
-
-#doc-content a:not(.btn) {
-  display: inline-block;
-  position: relative;
-
-  @include on-events {
-    @include color('white');
-    text-decoration: none;
-
-    &::before {
-      height: 100%;
-    }
-  }
-}
-
-#doc-content a::before {
-  content: "";
-  @include background-color('success');
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  z-index: -1;
-}
-
-#doc-content ul:not(.list-group) {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-#doc-content li:not(.list-group__item) {
-  margin-bottom: 0.5rem;
-}

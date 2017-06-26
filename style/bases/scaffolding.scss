@@ -44,3 +44,38 @@ a:not(.btn) {
     box-sizing: border-box;
   }
 }
+
+
+a {
+  display: inline-block;
+  position: relative;
+
+  @include on-events {
+    @include color('white');
+    text-decoration: none;
+
+    &::before {
+      height: 100%;
+    }
+  }
+}
+
+a::before {
+  @include background-color('success');
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: -1;
+}
+
+ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}

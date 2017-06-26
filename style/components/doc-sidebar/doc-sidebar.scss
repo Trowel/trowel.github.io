@@ -38,26 +38,18 @@
 
 .doc-sidebar__menu ul {
   list-style: none;
+  margin: 0;
 }
 
 .doc-sidebar__menu > ul > li:first-child {
   margin-top: 0;
 }
 
-.doc-sidebar__menu a {
-  display: block;
-}
-
-.doc-sidebar__menu .active {
-  @include color('success');
-  pointer-events: none;
-  text-decoration: none;
-}
-
 .doc-sidebar__menu li {
   margin-top: 2rem;
   font-size: 0.875em;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .doc-sidebar__menu li li {
@@ -69,4 +61,23 @@
 
 .doc-sidebar__menu li li li {
   margin-top: 0.85rem;
+}
+
+.doc-sidebar__menu a {
+  display: block;
+
+  @include on-events {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  &.active {
+    @include color('success');
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+.doc-sidebar__menu a::before {
+  content: none;
 }

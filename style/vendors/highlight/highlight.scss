@@ -1,7 +1,5 @@
 @import '../../utils/colors';
 
-@import '../../components/preview/utils/variables';
-
 /**
  * Syntax highlighting styles
  */
@@ -11,13 +9,6 @@
   margin-bottom: 1rem;
   padding: 1em;
   overflow-y: auto;
-  border: $preview--border;
-
-  .preview ~ [class^="language-"] & {
-    border-top: 0;
-  }
-
-
 
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
@@ -78,11 +69,4 @@
   .vg    { color: darken(color('success'), 10%); } // Name.Variable.Global
   .vi    { color: darken(color('success'), 10%); } // Name.Variable.Instance
   .il    { color: #099 } // Literal.Number.Integer.Long
-}
-
-
-[class^="language-"] {
-  .preview ~ & {
-    margin-top: -$preview--margin-bottom;
-  }
 }

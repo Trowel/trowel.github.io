@@ -17,5 +17,5 @@ You have several javascript files for different use cases :
 * The script written in es2015 and ready to `import` is available at `./src/javascript/breadcrumbs.js`
 
 
-### *Twig template*
-The twig template ready to be `include` or `embed` is located at `./src/twig/breadcrumb.html.twig`.
+<!-- ### *Twig template*
+The twig template ready to be `include` or `embed` is located at `./src/twig/breadcrumb.html.twig`. -->
