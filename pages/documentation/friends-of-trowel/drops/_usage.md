@@ -47,7 +47,7 @@ In order to make it work you need to setup some javascript. You have two ways to
 #### Javascript usage into html
 
 ``` html
-<script src="./path/to/trowel-alerts/javascript/drops.js"></script>
+<script src="./path/to/trowel-drops/javascript/drops.js"></script>
 
 <script type="text/javascript">
   var dropTriggers = new TrowelDrops(document.querySelectorAll('[data-drop="trigger"]'));
@@ -57,7 +57,7 @@ In order to make it work you need to setup some javascript. You have two ways to
 #### Javascript usage with an import
 
 ```js
-import TrowelDrops from './path/to/trowel-alerts/src/javascript/drops';
+import TrowelDrops from './path/to/trowel-drops/src/javascript/drops';
 
 const dropTriggers = new TrowelDrops(document.querySelectorAll('[data-drop="trigger"]'));
 ```
