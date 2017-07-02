@@ -2,7 +2,9 @@
 layout: default
 ---
 {% include header-documentation.html %}
-{% include subheader-documentation.html title=page.title library=page.library %}
+{% if page.subheader %}
+  {% include subheader-documentation.html title=page.title library=page.library %}
+{% endif %}
 {% include sidebar-documentation.html %}
 
 <div id="doc-content"{% if page.affix == true %} data-affix="load"{% endif %}>

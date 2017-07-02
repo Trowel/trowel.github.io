@@ -7,7 +7,11 @@
 
 #doc-content {
   padding: 0 $doccontent--padding;
-  margin-top: $header--height + $docsubheader--height;
+  margin-top: $header--height;
+
+  #doc-subheader ~ & {
+    margin-top: $header--height + $docsubheader--height;
+  }
 
   @include media-query('sm') {
     margin-left: $docsidebar--width;

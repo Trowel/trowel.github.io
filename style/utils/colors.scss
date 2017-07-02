@@ -25,3 +25,7 @@ $colors: (
 @mixin background-color($color, $opacity: 1) {
   background-color: color($color, $opacity);
 }
+
+@mixin color-gradient($color, $scale) {
+  background-image: linear-gradient(lighten(color($color), $scale), darken(color($color), $scale))
+}

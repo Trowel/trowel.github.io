@@ -79,3 +79,10 @@ ul {
 li {
   margin-bottom: 0.5rem;
 }
+
+a {
+  @include on-events(true) {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

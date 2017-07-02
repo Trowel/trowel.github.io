@@ -28,6 +28,7 @@ defaults:
       layout: documentation
       affix: true
       library: trowel/trowel
+      subheader: true
       type: trowel
       trwl_theme:
         colors:
