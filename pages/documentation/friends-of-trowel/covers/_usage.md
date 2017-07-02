@@ -127,7 +127,7 @@ In order to make it work you need to setup some javascript. You have two ways to
 <script src="./path/to/trowel-covers/javascript/covers.js"></script>
 
 <script type="text/javascript">
-  var alerts = new TrowelAlerts(document.querySelectorAll('.alert'));
+  var covers = new TrowelCovers(document.querySelectorAll('.cover'));
 </script>
 ```
 
