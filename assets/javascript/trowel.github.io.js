@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -214,6 +214,40 @@ module.exports = exports['default'];
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+class TrowelAlerts {
+  constructor(elements) {
+    elements.forEach(function(element, index) {
+      let element_obj = new TrowelAlert(element);
+    })
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["default"] = TrowelAlerts;
+
+
+class TrowelAlert {
+  constructor(element) {
+    this.element = element;
+    this.timesCollection = [].slice.call(this.element.querySelectorAll('[data-alert="times"]'));
+    return this.listener();
+  }
+
+  removeAlert() {
+    return this.element.remove();
+  }
+
+  listener() {
+    return this.timesCollection
+      .map(times => times.addEventListener('click', this.removeAlert.bind(this)));
+  }
+}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class TrowelBreadcrumbs {
   constructor(elements) {
     elements.forEach(function(element, index) {
@@ -282,72 +316,192 @@ class TrowelBreadcrumb {
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _menu = __webpack_require__(1);
-
-var _menu2 = _interopRequireDefault(_menu);
-
-var _affix = __webpack_require__(0);
-
-var _affix2 = _interopRequireDefault(_affix);
-
-var _breadcrumbs = __webpack_require__(2);
-
-var _breadcrumbs2 = _interopRequireDefault(_breadcrumbs);
-
-var _alerts = __webpack_require__(4);
-
-var _alerts2 = _interopRequireDefault(_alerts);
-
-var _drops = __webpack_require__(5);
-
-var _drops2 = _interopRequireDefault(_drops);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var menus = new _menu2.default(document.querySelectorAll('[data-flag="menu"]'));
-var affix = new _affix2.default();
-
-// Trowel components
-var breadcrumbs = new _breadcrumbs2.default(document.querySelectorAll('[data-flag="breadcrumb"]'));
-var alerts = new _alerts2.default(document.querySelectorAll('.alert'));
-var dropsTrigger = new _drops2.default(document.querySelectorAll('[data-drop="trigger"]'));
-
-/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-class TrowelAlerts {
+class TrowelCollapses {
   constructor(elements) {
     elements.forEach(function(element, index) {
-      let element_obj = new TrowelAlert(element);
+      let element_obj = new TrowelCollapse(element);
     })
   }
 }
-/* harmony export (immutable) */ __webpack_exports__["default"] = TrowelAlerts;
+/* harmony export (immutable) */ __webpack_exports__["default"] = TrowelCollapses;
 
 
-class TrowelAlert {
-  constructor(element) {
-    this.element = element;
-    this.timesCollection = [].slice.call(this.element.querySelectorAll('[data-alert="times"]'));
-    return this.listener();
+class TrowelCollapse {
+  constructor(collapse, nested = true) {
+    this.collapse = collapse;
+    this.nested = nested;
+
+    this.isVisible ? this.show() : this.hide();
+
+    this.listener();
+    this.collapse.dispatchEvent(this.events.mounted);
+    return;
   }
 
-  removeAlert() {
-    return this.element.remove();
+  show() {
+    this.collapse.dispatchEvent(this.events.show);
+    this.collapse.setAttribute('data-state', 'visible');
+    this.triggers.map(trigger => trigger.addActiveclass());
+    this.otherCollapsesFromGroup.forEach(collapse => collapse.hide());
+    this.collapse.dispatchEvent(this.events.shown);
+    return;
+  }
+
+  hide() {
+    this.collapse.dispatchEvent(this.events.hide);
+    this.collapse.setAttribute('data-state', 'hidden');
+    this.triggers.map(trigger => trigger.removeActiveclass());
+    this.collapse.dispatchEvent(this.events.hidden);
+    return;
+  }
+
+  toggle() {
+    this.collapse.dispatchEvent(this.events.toggle);
+
+    if (this.isVisible) {
+      this.hide();
+    } else {
+      this.show();
+    }
+
+    this.collapse.dispatchEvent(this.events.toggled);
+    return;
+  }
+
+  get isVisible () {
+    return this.collapse.getAttribute('data-state') == 'visible';
+  }
+
+  get groupName () {
+    return this.collapse.getAttribute('data-group');
+  }
+
+  get isEffectingOtherCollapsesFromGroup () {
+    return this.groupName && this.nested;
+  }
+
+  get otherCollapsesFromGroup () {
+    if (!this.isEffectingOtherCollapsesFromGroup) return [];
+    const groupList = document.querySelectorAll(`[data-group="${this.groupName}"]`);
+
+    return [].slice.call(groupList) // convert the nodelist as array
+      .filter(collapse => collapse != this.collapse) // exclude `this` from the arr
+      .map(collapse => new TrowelCollapse(collapse, false))
   }
 
   listener() {
-    return this.timesCollection
-      .map(times => times.addEventListener('click', this.removeAlert.bind(this)));
+    if (!this.nested) return false;
+
+    this.toggleTriggers
+      .map(trigger => trigger.domEl.addEventListener('click', this.toggle.bind(this)));
+
+    this.showTriggers
+      .map(trigger => trigger.domEl.addEventListener('click', this.show.bind(this)));
+
+    this.hideTriggers
+      .map(trigger => trigger.domEl.addEventListener('click', this.hide.bind(this)));
+  }
+
+  get triggers () {
+    const triggerDomList = document.querySelectorAll(`[data-collapse][data-href="#${this.collapse.id}"]`);
+
+    return Array.prototype.slice.call(triggerDomList) // convert the nodelist as array
+      .map(trigger => new TrowelCollapseTrigger(trigger));
+  }
+
+  get toggleTriggers () {
+    return this.triggers
+      .filter(trigger => trigger.isToggleAction);
+  }
+
+  get showTriggers () {
+    return this.triggers
+      .filter(trigger => trigger.isShowAction);
+  }
+
+  get hideTriggers () {
+    return this.triggers
+      .filter(trigger => trigger.isHideAction);
+  }
+
+  get events() {
+    const show = new Event('trowel.collapse.show');
+    const shown = new Event('trowel.collapse.shown');
+    const hide = new Event('trowel.collapse.hide');
+    const hidden = new Event('trowel.collapse.hidden');
+    const toggle = new Event('trowel.collapse.toggle');
+    const toggled = new Event('trowel.collapse.toggled');
+    const mounted = new Event('trowel.collapse.mounted');
+
+    return { show, shown, hide, hidden, toggle, toggled, mounted };
+  }
+}
+
+
+class TrowelCollapseTrigger {
+  constructor(domEl) {
+    this.domEl = domEl;
+
+    this.domEl.dispatchEvent(this.events.mounted);
+    return;
+  }
+
+  get activeclass () {
+    return this.domEl.getAttribute('data-activeclass');
+  }
+
+  get action () {
+    return this.domEl.getAttribute('data-collapse');
+  }
+
+  get isToggleAction () {
+    return this.action == 'toggle';
+  }
+
+  get isShowAction () {
+    return this.action == 'show';
+  }
+
+  get isHideAction () {
+    return this.action == 'hide';
+  }
+
+  addActiveclass() {
+    this.domEl.dispatchEvent(this.events.activate);
+    this.domEl.classList.add(this.activeclass);
+    this.domEl.dispatchEvent(this.events.activated);
+    return;
+  }
+
+  removeActiveclass() {
+    this.domEl.dispatchEvent(this.events.desactivate);
+    this.domEl.classList.remove(this.activeclass);
+    this.domEl.dispatchEvent(this.events.desactivated);
+    return;
+  }
+
+  toggleActiveclass() {
+    this.domEl.dispatchEvent(this.events.toggle);
+    this.domEl.classList.toggle(this.activeclass);
+    this.domEl.dispatchEvent(this.events.toggled);
+    return;
+  }
+
+  get events() {
+    const activate = new Event('trowel.collapse.trigger.activate');
+    const activated = new Event('trowel.collapse.trigger.activated');
+    const desactivate = new Event('trowel.collapse.desactivate.hide');
+    const desactivated = new Event('trowel.collapse.desactivated.hidden');
+    const toggle = new Event('trowel.collapse.trigger.toggle');
+    const toggled = new Event('trowel.collapse.trigger.toggled');
+    const mounted = new Event('trowel.collapse.trigger.mounted');
+
+    return { activate, activated, desactivate, desactivated, toggle, toggled, mounted };
   }
 }
 
@@ -598,6 +752,138 @@ class TrowelDrop {
 
 }
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+class TrowelModals {
+  constructor(elements) {
+    elements.forEach(function(element, index) {
+      let element_obj = new TrowelModal(element);
+    })
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["default"] = TrowelModals;
+
+
+class TrowelModal {
+  constructor(element) {
+    this.element = element;
+    this.dialog = this.element.children[0];
+    this.rootNodes = [this.element, this.dialog];
+
+    this.hideTriggers = [].slice.call(this.element.querySelectorAll('[data-modal="hide"]'));
+    this.showTriggers = [].slice.call(document.querySelectorAll(`[data-modal="open"][data-target="#${this.element.id}"]`));
+
+    this.events = this.events();
+    this.listener();
+    this.element.dispatchEvent(this.events.mounted);
+    return;
+  }
+
+  isVisible() {
+    return this.element.getAttribute('data-modal') === 'visible';
+  }
+
+  show() {
+    this.element.dispatchEvent(this.events.show);
+    this.rootNodes.map(node => node.setAttribute('data-modal', 'visible'));
+    this.element.dispatchEvent(this.events.shown);
+    return;
+  }
+
+  hide() {
+    this.element.dispatchEvent(this.events.hide);
+    this.rootNodes.map(node => node.setAttribute('data-modal', 'invisible'));
+    this.element.dispatchEvent(this.events.hidden);
+    return;
+  }
+
+  toggle() {
+    this.element.dispatchEvent(this.events.toggle);
+    this.isVisible() ? this.hide() : this.show();
+    this.element.dispatchEvent(this.events.toggled);
+    return;
+  }
+
+  backdropClose(event) {
+    // make sure the click event is on the modal and not dom children element
+    if (event.currentTarget === event.target) this.hide();
+
+    return;
+  }
+
+  events() {
+    const show = new Event('trowel.modal.show');
+    const shown = new Event('trowel.modal.shown');
+    const hide = new Event('trowel.modal.hide');
+    const hidden = new Event('trowel.modal.hidden');
+    const toggle = new Event('trowel.modal.toggle');
+    const toggled = new Event('trowel.modal.toggled');
+    const mounted = new Event('trowel.modal.mounted');
+
+    return { show, shown, hide, hidden, toggle, toggled, mounted };
+  }
+
+  listener() {
+    this.element.addEventListener('click', this.backdropClose.bind(this));
+    this.hideTriggers.map(hideTrigger => hideTrigger.addEventListener('click', this.backdropClose.bind(this)))
+    this.showTriggers.map(showTrigger => showTrigger.addEventListener('click', this.show.bind(this)))
+
+    return;
+  }
+}
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _menu = __webpack_require__(1);
+
+var _menu2 = _interopRequireDefault(_menu);
+
+var _affix = __webpack_require__(0);
+
+var _affix2 = _interopRequireDefault(_affix);
+
+var _breadcrumbs = __webpack_require__(3);
+
+var _breadcrumbs2 = _interopRequireDefault(_breadcrumbs);
+
+var _alerts = __webpack_require__(2);
+
+var _alerts2 = _interopRequireDefault(_alerts);
+
+var _drops = __webpack_require__(5);
+
+var _drops2 = _interopRequireDefault(_drops);
+
+var _collapses = __webpack_require__(4);
+
+var _collapses2 = _interopRequireDefault(_collapses);
+
+var _modals = __webpack_require__(6);
+
+var _modals2 = _interopRequireDefault(_modals);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var menus = new _menu2.default(document.querySelectorAll('[data-flag="menu"]'));
+var affix = new _affix2.default();
+
+// Trowel components
+var breadcrumbs = new _breadcrumbs2.default(document.querySelectorAll('[data-flag="breadcrumb"]'));
+var alerts = new _alerts2.default(document.querySelectorAll('.alert'));
+var dropsTrigger = new _drops2.default(document.querySelectorAll('[data-drop="trigger"]'));
+var collapses = new _collapses2.default(document.querySelectorAll('[data-flag="collapse"]'));
+var modals = new _modals2.default(document.querySelectorAll('[data-flag="modal"]'));
 
 /***/ })
 /******/ ]);
