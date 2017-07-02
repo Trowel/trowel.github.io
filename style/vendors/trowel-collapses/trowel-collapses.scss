@@ -1,1 +1,22 @@
+@import '../../utils/colors';
+@import '../../utils/selectors';
 @import '../../../node_modules/trowel-collapses/src/scss/collapses';
+
+.accordion__trigger {
+  color: color('white') !important;
+}
+
+.tabs-nav__anchor {
+  color: color('white') !important;
+}
+
+.tabs-nav__item {
+  margin-bottom: 0;
+}
+
+.tabs-nav__anchor--active {
+  @include on-events(true) {
+    color: color('primary') !important;
+    text-decoration: none !important;
+  }
+}
