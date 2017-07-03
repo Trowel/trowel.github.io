@@ -6,16 +6,47 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
+title: Trowel
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Trowel is a Sass toolkit that allows you to create and use CSS frameworks with the most flexible pattern ever designed.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: TrowelSass
+github_username: Trowel
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: documentation
+      affix: true
+      library: trowel/trowel
+      subheader: true
+      type: trowel
+      trwl_theme:
+        colors:
+          gray_light: rgb(248, 248, 250)
+          gray_medium: rgb(232, 232, 236)
+          gray_dark: rgb(207, 207, 213)
+          gray_darker: rgb(155, 155, 157)
+          primary: rgb(31, 13, 51)
+          success: rgb(55, 211, 189)
+          warning: rgb(255, 176, 0)
+          danger: rgb(253, 65, 100)
+        sizes:
+          xs: 0.65rem
+          sm: 0.8rem
+          md: 1rem
+          lg: 1.2rem
+        font_family: "'Open Sans', verdana, sans-serif"
+        line_height: 1.2
+        padding_y: 0.65em
+        padding_x: 1.65em
+        border_width: 1px
+        border_style: solid
+        border_radius: 0.2em

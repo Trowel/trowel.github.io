@@ -1,0 +1,5 @@
+# http://editorconfig.org
+root = true
+
+[*.scss]
+indent_size = 2

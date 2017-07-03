@@ -1,0 +1,17 @@
+#grid-cards-theme {
+  justify-content: center;
+}
+
+#grid-cards-theme .flex-grid__col {
+  margin: 0;
+  padding: .5em;
+  width: 100%;
+
+  @include media-query('sm') {
+    width: 50%;
+  }
+
+  @include media-query('lg') {
+    width: 25%;
+  }
+}

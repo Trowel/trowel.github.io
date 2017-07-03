@@ -1,0 +1,44 @@
+@import '../backdrop/utils/variables';
+
+.slide-panel {
+  @include media-query('xs', 'and-less') {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: $backdrop--z-index + 1;
+    transition: $backdrop--transition;
+    overflow-y: auto;
+  }
+
+  &.is-in {
+    @include media-query('xs', 'and-less') {
+      transform: none;
+    }
+  }
+}
+
+.slide-panel--left {
+  @include media-query('xs', 'and-less') {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.slide-panel--right {
+  @include media-query('xs', 'and-less') {
+    right: 0;
+    transform: translateX(100%);
+  }
+}
+
+
+.slide-panel__toggle {
+  @include media-query('sm', 'and-more') {
+    display: none;
+  }
+}
+
+.slide-panel a::before {
+  content: none;
+}

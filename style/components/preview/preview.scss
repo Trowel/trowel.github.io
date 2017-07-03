@@ -1,0 +1,9 @@
+@import '../../utils/colors';
+
+@import './utils/variables';
+
+.preview {
+  border: $preview--border;
+  padding: 1rem;
+  margin-bottom: $preview--margin-bottom;
+}

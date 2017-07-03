@@ -1,0 +1,86 @@
+@import '../../utils/colors';
+@import '../../utils/selectors';
+@import '../../layouts/doc-content/utils/variables';
+
+.footer {
+  @include background-color('primary');
+  @include color('white');
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 2em;
+  align-items: center;
+
+  @include media-query('sm') {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25em;
+  }
+
+  #doc-content ~ & {
+    @include media-query('sm') {
+      margin-left: $docsidebar--width;
+    }
+  }
+}
+
+.footer a {
+  @include on-events {
+    @include color('success');
+    text-decoration: none;
+  }
+}
+
+.footer a::before {
+  content: none;
+}
+
+.footer__socials {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+
+  @include media-query('sm') {
+    margin-bottom: 0;
+  }
+}
+
+.footer__socials > * + * {
+  margin-left: 1.5em;
+}
+
+.footer__socials a {
+  line-height: 1;
+}
+
+.footer__socials svg {
+  $size: 2em;
+  width: $size;
+  height: $size;
+
+  @include media-query('sm') {
+    $size: 1.5em;
+    width: $size;
+    height: $size;
+  }
+}
+
+.footer__support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include media-query('sm') {
+    flex-direction: row;
+  }
+}
+
+.footer__support svg {
+  margin-top: 0.5em;
+
+  @include media-query('sm') {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+}

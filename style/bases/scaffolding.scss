@@ -1,0 +1,88 @@
+@import '../utils/font-families';
+@import '../utils/selectors';
+
+body,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+body {
+  @include font-family('open-sans');
+  line-height: 1.8;
+}
+
+
+a:not(.btn) {
+  text-decoration: none;
+
+  &,
+  &:visited {
+    color: inherit;
+  }
+
+  @include on-events {
+    text-decoration: underline;
+  }
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+
+a {
+  display: inline-block;
+  position: relative;
+
+  @include on-events {
+    @include color('white');
+    text-decoration: none;
+
+    &::before {
+      height: 100%;
+    }
+  }
+}
+
+a::before {
+  @include background-color('success');
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: -1;
+}
+
+ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  @include on-events(true) {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

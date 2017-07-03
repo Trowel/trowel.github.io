@@ -1,0 +1,62 @@
+<ul class="tabs-nav tabs-nav--home-snippet">
+  <li class="tabs-nav__item">
+    <a class="tabs-nav__anchor" data-collapse="show" data-href="#showcase-snippet-scss" data-activeclass="tabs-nav__anchor--active">SCSS</a>
+  </li>
+
+  <li class="tabs-nav__item">
+    <a class="tabs-nav__anchor" data-collapse="show" data-href="#showcase-snippet-css" data-activeclass="tabs-nav__anchor--active">CSS (compiled)</a>
+  </li>
+</ul>
+
+<div class="tabs-collapses tabs-collapses--home-snippet" id="showcase-snippet">
+  <div class="collapse" id="showcase-snippet-scss" data-flag="collapse" data-group="tab-ex-4" data-state="visible">
+    <pre><code class="sass">$button--color: rgb(0, 0, 0) !default;
+
+$button--background-color: (
+  'default': rgb(255, 255, 255),
+  ':hover': rgb(225, 225, 225),
+  '-primary': (
+    'default': rgb(31, 13, 51),
+    ':hover': rgb(21, 3, 41),
+  ),
+) !default;
+
+$button--cursor: (
+  '&lt;button': default,
+) !default;
+
+$button--selector: selector(new 'btn');
+
+@include statement($button--selector, (
+  ('display', inline-block),
+  ('color', $button--color),
+  ('background-color', $button--background-color),
+  ('cursor', $button--cursor),
+  ('opacity', $button--opacity),
+));</code></pre>
+  </div>
+
+  <div class="collapse" id="showcase-snippet-css" data-flag="collapse" data-group="tab-ex-4">
+<pre><code class="sass">.btn {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.btn--primary {
+  background-color: rgb(31, 13, 51);
+}
+
+.btn--primary:hover {
+  background-color: rgb(21, 3, 41);
+}
+
+button.btn {
+  cursor: default;
+}</code></pre>
+  </div>
+</div>

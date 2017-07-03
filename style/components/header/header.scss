@@ -1,0 +1,60 @@
+@import '../backdrop/utils/variables';
+
+@import '../../utils/colors';
+@import '../../utils/sizes';
+
+@import './utils/variables';
+
+.header {
+  @include background-color('primary');
+  @include color('white');
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header--height;
+  padding-left: $component-padding-x;
+  padding-right: $component-padding-x;
+  z-index: 1000;
+}
+
+.header__logo {
+  line-height: 1;
+  font-size: 0;
+}
+
+.header__logo::before {
+  content: none;
+}
+
+.header__nav {
+  @include background-color('primary');
+  @include padding('top' 'bottom');
+  display: flex;
+  flex-direction: column;
+
+  @include media-query('sm') {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
+
+.header__nav a {
+  @include padding;
+  display: inline-block;
+
+  @include media-query('sm') {
+    padding: 0;
+  }
+
+  & + a {
+    @include media-query('sm') {
+      margin-left: 2em;
+    }
+  }
+}

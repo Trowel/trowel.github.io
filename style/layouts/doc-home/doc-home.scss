@@ -1,0 +1,114 @@
+@import './utils/variables';
+@import '../../utils/colors';
+@import '../../utils/font-families';
+@import '../../utils/gutters';
+@import '../doc-content/utils/variables';
+@import '../../components/skew-sections/utils/variables';
+
+#doc-home__header {
+  margin-left: -$doccontent--padding;
+  margin-right: -$doccontent--padding;
+  padding: 0 !important;
+}
+
+#doc-home__header-bg {
+  @include background-color($dochome-headerbg--color);
+}
+
+#doc-home__header-bg::before {
+  @include media-query('md') {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 260px;
+    width: $dochome-headerarturo--width;
+    transform: skewY(#{$skewsection--skew * -1});
+    background-image: url('/assets/images/arturo/arturo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom: -20px;
+  }
+}
+
+#doc-home__header-content {
+  padding: $doccontent--padding;
+  color: inherit;
+
+  @include media-query('md') {
+    margin-left: $dochome-headerarturo--width;
+  }
+}
+
+#doc-home__heading {
+  @include font-family('fredoka-one');
+  font-weight: lighter;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+#doc-home__sub-heading {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+
+#doc-home__content {
+  @include gutter-row($dochome-content--gutter);
+  display: flex;
+  flex-direction: column;
+
+  @include media-query('md') {
+    flex-direction: row;
+  }
+}
+
+#doc-home__core,
+#doc-home__friends-of {
+  @include gutter-col($dochome-content--gutter);
+  padding-top: $dochome-content--gutter;
+  padding-bottom: $dochome-content--gutter;
+  width: 100%;
+
+  @include media-query('md') {
+    width: 50%;
+  }
+}
+
+
+#doc-home__friends-of {
+  border-top: 1px solid color($dochome-headerbg--color);
+
+  @include media-query('md') {
+    border-top: 0;
+    border-left: 1px solid color($dochome-headerbg--color);
+  }
+}
+
+#doc-home__content h2 {
+  @include font-family('fredoka-one');
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+#doc-home__friends-list {
+  @include gutter-row(1rem);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-wrap: wrap;
+
+  @include media-query('sm') {
+    flex-direction: row;
+  }
+}
+
+#doc-home__friends-list li {
+  @include gutter-col(1rem);
+}
+
+#doc-home__friends-list a::before {
+  @include background-color('danger');
+}

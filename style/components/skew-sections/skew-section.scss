@@ -1,0 +1,27 @@
+@import './utils/variables';
+
+.skew-section {
+  position: relative;
+}
+
+.skew-section__bg {
+  background-color: $skewsection--bg-color;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: skewY(#{$skewsection--skew});
+  transform-origin: 0;
+  overflow: hidden;
+}
+
+.skew-section__content {
+  padding: 1rem 0;
+  height: 20rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: $skewsection--color;
+}

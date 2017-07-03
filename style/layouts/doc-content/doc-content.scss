@@ -1,0 +1,47 @@
+@import '../../components/header/utils/variables';
+@import '../../components/doc-subheader/utils/variables';
+@import '../../components/doc-sidebar/utils/variables';
+@import '../../components/affix/utils/variables';
+
+@import './utils/variables';
+
+#doc-content {
+  padding: 0 $doccontent--padding;
+  margin-top: $header--height;
+
+  @include media-query('sm') {
+    min-height: calc(100vh - #{$header--height + 4.25rem}) // magic number equals to footer height on sm+
+  }
+
+  #doc-subheader ~ & {
+    margin-top: $header--height + $docsubheader--height;
+
+    @include media-query('sm') {
+      min-height: calc(100vh - #{$header--height + $docsubheader--height + 4.25rem}) // magic number equals to footer height on sm+
+    }
+  }
+
+  @include media-query('sm') {
+    margin-left: $docsidebar--width;
+  }
+
+  .affix ~ & {
+    @include media-query('md') {
+      margin-right: $affix--width;
+    }
+  }
+}
+
+#doc-content h2 {
+  padding-top: $doccontent--padding;
+  margin-top: 4rem;
+}
+
+#doc-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#doc-content > *:first-child {
+  padding-top: $doccontent--padding;
+}

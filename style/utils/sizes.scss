@@ -1,0 +1,40 @@
+$sizes: (
+  'xs': trwl-theme-size('xs'),
+  'sm': trwl-theme-size('sm'),
+  'md': trwl-theme-size('md'),
+  'lg': trwl-theme-size('lg'),
+);
+
+$component-padding-x: trwl-theme('padding-x');
+$component-padding-y: trwl-theme('padding-y');
+$component-border-radius: trwl-theme('border-radius');
+
+@function size($size: 'md') {
+  @return map-get($sizes, $size);
+}
+
+@mixin font-size($size: 'md') {
+  font-size: size($size);
+}
+
+@mixin padding($direction: null) {
+  @if $direction {
+    @if index($direction, 'top') {
+      padding-top: $component-padding-y;
+    }
+
+    @if index($direction, 'right') {
+      padding-right: $component-padding-x;
+    }
+
+    @if index($direction, 'bottom') {
+      padding-bottom: $component-padding-y;
+    }
+
+    @if index($direction, 'left') {
+      padding-left: $component-padding-x;
+    }
+  } @else {
+    padding: $component-padding-y $component-padding-x;
+  }
+}

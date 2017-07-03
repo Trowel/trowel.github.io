@@ -1,0 +1,13 @@
+@import '../../utils/colors';
+
+.callout {
+  font-style: italic;
+  padding-left: 1em;
+  border-left: 2px solid;
+}
+
+@each $theme in ('success', 'primary', 'warning', 'danger') {
+  .callout--#{$theme} {
+    border-color: color($theme);
+  }
+}

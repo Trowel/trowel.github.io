@@ -1,0 +1,50 @@
+@import '../../utils/colors';
+@import '../../utils/sizes';
+
+table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+table tbody tr:nth-of-type(odd) {
+  @include background-color('gray-light');
+}
+
+th {
+  white-space: nowrap;
+}
+
+table code {
+  white-space: nowrap;
+  display: inline;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+thead {
+  text-transform: uppercase;
+}
+
+td, th {
+  text-align: left;
+  padding: 0.5em 1em;
+  vertical-align: top
+}
+
+table tr > td:nth-child(4) {
+  min-width: 18rem;
+}
+
+.table__inner-heading {
+  display: inline-block;
+  padding-top: 2em;
+  font-weight: 700;
+  font-size: 1.15em;
+  font-style: italic;
+}

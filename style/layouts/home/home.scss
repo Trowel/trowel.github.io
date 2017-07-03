@@ -1,0 +1,181 @@
+@import './utils/mixins';
+@import '../../utils/colors';
+@import '../../utils/font-families';
+@import '../../components/skew-sections/utils/variables';
+
+#home {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#home .btn {
+  margin-bottom: 1em;
+}
+
+.home__container {
+  @include home--container;
+}
+
+#home__header .skew-section__bg::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+}
+
+#home__header .skew-section__content {
+  height: 100vh;
+  min-height: 40.625rem;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+#home__header .header {
+  @include home--container;
+  background-color: transparent;
+  position: relative;
+  height: auto;
+  margin-bottom: 17vw;
+
+  @include media-query('sm') {
+    margin-bottom: 16vh;
+  }
+}
+
+#home__header .header .btn {
+  margin-bottom: 0;
+}
+
+#home__header .header__nav {
+  @include media-query('sm') {
+    background-color: $skewsection--bg-color;
+  }
+}
+
+#home__heading {
+  @include color('primary');
+  @include font-family('fredoka-one');
+  font-weight: lighter;
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+#home__intro {
+  @include color('primary');
+  font-size: 1.2rem;
+  margin-bottom: 4em;
+  max-width: 34rem;
+}
+
+#home__showcase .skew-section__bg {
+  @include background-color('white');
+}
+
+#home__showcase .skew-section__content {
+  color: inherit;
+  height: auto;
+}
+
+#home__friends::after {
+  content: '';
+  @include background-color('danger');
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  right: 0;
+}
+
+#home__friends .skew-section__bg {
+  @include background-color('danger');
+}
+
+#home__friends .skew-section__content {
+  @include color('white');
+  text-align: center;
+  height: auto;
+  padding-bottom: 4em;
+  margin-bottom: 0;
+}
+
+#home__friends-pres h2 {
+  @include font-family('fredoka-one');
+  font-weight: lighter;
+  font-size: 3em;
+  line-height: 1.5;
+}
+
+#home__friends-pres h2 span {
+  @include font-family('open-sans');
+  display: block;
+  font-size: 0.5em;
+}
+
+
+
+#home__illustrations {
+  position: absolute;
+  left: 68%;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(#{$skewsection--skew});
+  pointer-events: none;
+  top: 23vh;
+  z-index: 1000;
+  display: none;
+
+  @include media-query('sm') {
+    display: block;
+  }
+
+  @include media-query('md') {
+    left: 60%;
+  }
+}
+
+.home__snippet {
+  @include background-color('primary');
+  @include color('white');
+  font-size: 0.7em;
+  border-radius: 0.4em;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+#home code {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+#home__illustrations-arturo {
+  margin-bottom: -2em;
+  position: relative;
+  z-index: -1;
+  margin-left: 4em;
+}
+
+#home__showcase-container {
+  text-align: right;
+  max-width: 32em;
+  margin: 3em 0 5em;
+}
+
+#home__showcase-container h2 {
+  @include color('danger');
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+#showcase-snippet {
+  margin-bottom: 10vw;
+  position: relative;
+}
