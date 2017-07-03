@@ -2,6 +2,7 @@ class Affix {
   constructor() {
     this.contentWrapper = document.getElementById('doc-content');
 
+    if (!this.contentWrapper) return;
     if (!this.contentWrapper.getAttribute('data-affix')) return;
 
     this.print();
@@ -34,7 +35,7 @@ class Affix {
 
   goTo(event) {
     const target = document.getElementById(event.target.getAttribute('data-anchor'));
-    const header = document.getElementById('doc-header');
+    const header = document.getElementById('header');
     const subHeader = document.getElementById('doc-subheader');
     const scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
     return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;

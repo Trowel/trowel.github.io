@@ -1,0 +1,96 @@
+@import '../../../utils/colors';
+
+$tabsnavs--font-size: (
+  'default': trwl-theme-size('md'),
+  '-home-snippet': 0.8em,
+) !default;
+$tabsnavs--font-family: trwl-theme('font-family') !default;
+$tabsnavs--font-weight: null !default;
+$tabsnavs--text-transform: null !default;
+$tabsnavs--letter-spacing: null !default;
+$tabsnavs--line-height: null !default;
+$tabsnavs--text-align: null !default;
+$tabsnavs--text-decoration: null !default;
+$tabsnavs--margin: null !default;
+$tabsnavs--border-width: null !default;
+$tabsnavs--border-style: null !default;
+$tabsnavs--border-color: null !default;
+$tabsnavs--border-radius: null !default;
+$tabsnavs--color: null !default;
+$tabsnavs--box-shadow: null !default;
+$tabsnavs--background: null !default;
+$tabsnavs--background-color: (
+  'default': trwl-theme-color('primary'),
+  '-home-snippet': transparent,
+) !default;
+$tabsnavs--padding: (
+  'default': trwl-theme('padding-y') (trwl-theme('padding-x') / 2) 0,
+  '-home-snippet': 0,
+) !default;
+
+$tabsnavs-item--gutter: 1em !default;
+
+$tabsnavs-anchor--font-size: null !default;
+$tabsnavs-anchor--font-family: null !default;
+$tabsnavs-anchor--font-weight: null !default;
+$tabsnavs-anchor--text-transform: null !default;
+$tabsnavs-anchor--letter-spacing: null !default;
+$tabsnavs-anchor--line-height: null !default;
+$tabsnavs-anchor--text-align: null !default;
+$tabsnavs-anchor--text-decoration: null !default;
+$tabsnavs-anchor--margin: null !default;
+$tabsnavs-anchor--border-width: null !default;
+$tabsnavs-anchor--border-style: null !default;
+$tabsnavs-anchor--border-color: null !default;
+$tabsnavs-anchor--border-radius: trwl-theme('border-radius') trwl-theme('border-radius') 0 0;
+$tabsnavs-anchor--color: (
+  'default': rgb(255, 255, 255),
+  '~active': trwl-theme-color('primary'),
+  '-home-snippet': (
+    'default': color('primary') !important,
+    ':hover': color('primary') !important,
+    ':active': color('primary') !important,
+    ':focus': color('primary') !important,
+  ),
+) !default;
+$tabsnavs-anchor--box-shadow: null !default;
+$tabsnavs-anchor--background: (
+  '~active': rgb(255, 255, 255),
+  '-home-snippet': (
+    'default': transparent !important,
+    '~active': color('gray-light') !important,
+  ),
+) !default;
+$tabsnavs-anchor--background-color: null !default;
+$tabsnavs-anchor--padding: (
+  'default': trwl-theme('padding-y') (trwl-theme('padding-x') / 2),
+  '-home-snippet': 0.3em 0.8em,
+) !default;
+
+
+$tabscollapses--font-size: (
+  'default': trwl-theme-size('md'),
+  '-home-snippet': 0.7rem,
+) !default;
+$tabscollapses--font-family: trwl-theme('font-family') !default;
+$tabscollapses--font-weight: null !default;
+$tabscollapses--text-transform: null !default;
+$tabscollapses--letter-spacing: null !default;
+$tabscollapses--line-height: null !default;
+$tabscollapses--text-align: null !default;
+$tabscollapses--text-decoration: null !default;
+$tabscollapses--margin: null !default;
+$tabscollapses--border-width: null !default;
+$tabscollapses--border-style: null !default;
+$tabscollapses--border-color: null !default;
+$tabscollapses--border-radius: null !default;
+$tabscollapses--color: null !default;
+$tabscollapses--box-shadow: null !default;
+$tabscollapses--background: null !default;
+$tabscollapses--background-color: (
+  '-home-snippet': color('gray-light'),
+) !default;
+$tabscollapses--padding: (
+  'default': trwl-theme('padding-y') 0,
+  '-home-snippet': 1.5em,
+) !default;

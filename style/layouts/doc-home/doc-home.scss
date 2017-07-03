@@ -3,9 +3,9 @@
 @import '../../utils/font-families';
 @import '../../utils/gutters';
 @import '../doc-content/utils/variables';
+@import '../../components/skew-sections/utils/variables';
 
 #doc-home__header {
-  position: relative;
   margin-left: -$doccontent--padding;
   margin-right: -$doccontent--padding;
   padding: 0 !important;
@@ -13,13 +13,6 @@
 
 #doc-home__header-bg {
   @include background-color($dochome-headerbg--color);
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: skewY(#{$dochome-headerbg--skew});
-  transform-origin: 0;
-  overflow: hidden;
 }
 
 #doc-home__header-bg::before {
@@ -29,7 +22,7 @@
     position: absolute;
     height: 260px;
     width: $dochome-headerarturo--width;
-    transform: skewY(#{$dochome-headerbg--skew * -1});
+    transform: skewY(#{$skewsection--skew * -1});
     background-image: url('/assets/images/arturo/arturo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,12 +33,7 @@
 
 #doc-home__header-content {
   padding: $doccontent--padding;
-  height: 20rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
+  color: inherit;
 
   @include media-query('md') {
     margin-left: $dochome-headerarturo--width;

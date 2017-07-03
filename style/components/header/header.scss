@@ -5,7 +5,7 @@
 
 @import './utils/variables';
 
-.doc-header {
+.header {
   @include background-color('primary');
   @include color('white');
   display: flex;
@@ -21,7 +21,7 @@
   z-index: 1000;
 }
 
-.doc-header__nav {
+.header__nav {
   @include background-color('primary');
   @include padding('top' 'bottom');
   display: flex;
@@ -35,7 +35,7 @@
   }
 }
 
-.doc-header__nav a {
+.header__nav a {
   @include padding;
   display: inline-block;
 

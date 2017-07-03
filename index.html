@@ -1,34 +1,71 @@
 ---
 layout: default
 title: Trowel - The most evolving way to write scss code
+affix: false
 ---
+<main id="home">
+  <header id="home__header" class="skew-section">
+    <div class="skew-section__bg"></div>
 
-<div id="content">
-  <img class="trowel-logo" src="https://github.com/Trowel/Trowel/blob/master/media/dist/banners/trowel-black-on-transparent.png?raw=true" alt="trowel logo">
-  <h1 class="catchline">The most evolving way to write scss code</h1>
+    <div class="skew-section__content">
+      {% include header.html %}
 
-  <p class="coming-soon">
-    <span>website coming soon</span>
-    <a class="github-button" href="https://github.com/trowel/trowel" data-style="mega" aria-label="Star trowel/trowel on GitHub">Star</a>
-  </p>
-</div>
+      <div class="home__container">
+        <h1 id="home__heading">The mother of CSS frameworks</h1>
 
-<!--<div class="home">
+        <p id="home__intro">
+          Trowel is a <i>Sass</i> toolkit that allows you to create and use CSS frameworks with the most flexible pattern ever designed.
+        </p>
 
-  <h1 class="page-heading">Posts</h1>
+        <p id="home__intro-buttons">
+          <a href="/documentation/trowel-core/use-a-component/" class="btn btn--lg btn--danger">Getting started</a>
+          <a href="https://github.com/trowel" class="btn btn--lg" target="_blank">Checkout on github</a>
+        </p>
+      </div>
+    </div>
+  </header>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section id="home__illustrations">
+    <img id="home__illustrations-arturo" src="/assets/images/arturo/arturo.png" height="200">
+    {% include home/header-snippet.html %}
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <section id="home__showcase" class="skew-section">
+    <div class="skew-section__bg"></div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="skew-section__content / home__container">
+      <div id="home__showcase-container">
+        <h2>Discover the power of the Trowel Variables</h2>
+        <p>
+          The key feature of Trowel is its variables. The Trowel variables allows you to define severals values depending of criterias like a pseudo-class, a modifier class, a responsive breakpoint, etc.
+          This pattern allows the user to totally control the css output, by generating only the style required. CSS framework will no more be big boats, they will just fit for you website.
+        </p>
+      </div>
 
-</div>-->
+      {% include home/showcase-snippet.html %}
+    </div>
+  </section>
+
+  <section id="home__friends" class="skew-section">
+    <div class="skew-section__bg"></div>
+
+    <div class="skew-section__content">
+      <div class="home__container">
+        <div id="home__friends-pres">
+          <h2>Friends of Trowel <span>the official list of Trowel Components</span></h2>
+
+          <p>
+            Friends of Trowel is a github organisation that regroups all the Trowel Components created and maintened by the Trowel core team.
+            <br>
+            You will find every basic components thats compose any CSS framework, but with a lot of Trowel variable allowing you to customize the style like never designed before.
+          </p>
+
+          <p>
+            <a href="/documentation/" class="btn btn--primary">See the documentation</a>
+            <a href="https://github.com/FriendsOfTrowel" class="btn btn--danger">Checkout on github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

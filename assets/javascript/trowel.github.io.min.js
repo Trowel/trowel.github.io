@@ -87,6 +87,7 @@ var Affix = function () {
 
     this.contentWrapper = document.getElementById('doc-content');
 
+    if (!this.contentWrapper) return;
     if (!this.contentWrapper.getAttribute('data-affix')) return;
 
     this.print();
@@ -114,7 +115,7 @@ var Affix = function () {
     key: 'goTo',
     value: function goTo(event) {
       var target = document.getElementById(event.target.getAttribute('data-anchor'));
-      var header = document.getElementById('doc-header');
+      var header = document.getElementById('header');
       var subHeader = document.getElementById('doc-subheader');
       var scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
       return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
