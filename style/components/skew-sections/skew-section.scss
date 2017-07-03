@@ -17,11 +17,15 @@
 
 .skew-section__content {
   padding: 1rem 0;
-  height: 20rem;
+  height: 25rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 1rem;
   color: $skewsection--color;
+
+  @include media-query('sm') {
+    height: 20rem;
+  }
 }
