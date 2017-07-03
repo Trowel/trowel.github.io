@@ -1,6 +1,7 @@
 @import './utils/mixins';
 @import '../../utils/colors';
 @import '../../utils/font-families';
+@import '../../utils/selectors';
 @import '../../components/skew-sections/utils/variables';
 
 #home {
@@ -178,4 +179,11 @@
 #showcase-snippet {
   margin-bottom: 10vw;
   position: relative;
+}
+
+
+#home__intro-github {
+  @include on-events {
+    @include color('primary');
+  }
 }
