@@ -18,7 +18,7 @@
   height: $header--height;
   padding-left: $component-padding-x;
   padding-right: $component-padding-x;
-  z-index: 1000;
+  z-index: $backdrop--z-index;
 }
 
 .header__logo {
