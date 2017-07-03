@@ -9,8 +9,16 @@
   padding: 0 $doccontent--padding;
   margin-top: $header--height;
 
+  @include media-query('sm') {
+    min-height: calc(100vh - #{$header--height + 4.25rem}) // magic number equals to footer height on sm+
+  }
+
   #doc-subheader ~ & {
     margin-top: $header--height + $docsubheader--height;
+
+    @include media-query('sm') {
+      min-height: calc(100vh - #{$header--height + $docsubheader--height + 4.25rem}) // magic number equals to footer height on sm+
+    }
   }
 
   @include media-query('sm') {

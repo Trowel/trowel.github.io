@@ -3,6 +3,8 @@
   {% include head.html %}
   <body class="{% if page.type == 'friendsoftrowel' %}fot-page{% endif %}">
     {{ content }}
+
+    {% include footer.html %}
     <script src="/assets/javascript/tether.min.js"></script>
     <script src="/assets/javascript/trowel.github.io.min.js"></script>
   </body>
