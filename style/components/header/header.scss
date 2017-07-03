@@ -21,6 +21,15 @@
   z-index: 1000;
 }
 
+.header__logo {
+  line-height: 1;
+  font-size: 0;
+}
+
+.header__logo::before {
+  content: none;
+}
+
 .header__nav {
   @include background-color('primary');
   @include padding('top' 'bottom');

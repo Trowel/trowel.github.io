@@ -1,4 +1,4 @@
 <nav class="page-control">
   <span>next :</span>
-  <a href="{{ include.href }}">{{ include.label }}</a>
+  <a href="{{ include.href | prepend: site.baseurl }}">{{ include.label }}</a>
 </nav>
