@@ -16,6 +16,7 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  z-index: 100000;
 
   @include on-events {
     @include background-color('primary');
