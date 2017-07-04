@@ -90,8 +90,7 @@ var Affix = function () {
     if (!this.contentWrapper) return;
     if (!this.contentWrapper.getAttribute('data-affix')) return;
 
-    this.print();
-    return this.listener();
+    return this.print();
   }
 
   _createClass(Affix, [{
@@ -104,33 +103,13 @@ var Affix = function () {
       this.headings.map(function (heading) {
         var anchor = document.createElement("a");
         anchor.innerText = heading.innerText;
-        anchor.setAttribute('data-anchor', heading.id);
+        anchor.setAttribute('data-anchor', '');
+        anchor.setAttribute('href', '#' + heading.id);
 
         return nav.append(anchor);
       });
 
       return this.contentWrapper.before(nav);
-    }
-  }, {
-    key: 'goTo',
-    value: function goTo(event) {
-      var target = document.getElementById(event.target.getAttribute('data-anchor'));
-      var header = document.getElementById('header');
-      var subHeader = document.getElementById('doc-subheader');
-      var docContent = document.getElementById('doc-content');
-      var scrollTop = target.offsetTop;
-      if (docContent.firstElementChild == target) scrollTop -= header.offsetHeight;
-
-      return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
-    }
-  }, {
-    key: 'listener',
-    value: function listener() {
-      var _this = this;
-
-      this.anchors.map(function (anchor) {
-        return anchor.addEventListener('click', _this.goTo.bind(_this));
-      });
     }
   }, {
     key: 'headings',
@@ -176,8 +155,7 @@ var DocHeadings = function DocHeadings() {
   anchors.options = {
     placement: 'left'
   };
-  anchors.add('[data-headinganchor="true"] h1, [data-headinganchor="true"] h2, [data-headinganchor="true"] h3, [data-headinganchor="true"] h4, [data-headinganchor="true"] h5, [data-headinganchor="true"] h6');
-  return anchors;
+  return anchors.add('[data-headinganchor="true"] h1, [data-headinganchor="true"] h2, [data-headinganchor="true"] h3, [data-headinganchor="true"] h4, [data-headinganchor="true"] h5, [data-headinganchor="true"] h6');
 };
 
 exports.default = DocHeadings;

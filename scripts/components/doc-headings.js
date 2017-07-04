@@ -6,7 +6,6 @@ export default class DocHeadings {
     anchors.options = {
       placement: 'left',
     }
-    anchors.add('[data-headinganchor="true"] h1, [data-headinganchor="true"] h2, [data-headinganchor="true"] h3, [data-headinganchor="true"] h4, [data-headinganchor="true"] h5, [data-headinganchor="true"] h6');
-    return anchors
+    return anchors.add('[data-headinganchor="true"] h1, [data-headinganchor="true"] h2, [data-headinganchor="true"] h3, [data-headinganchor="true"] h4, [data-headinganchor="true"] h5, [data-headinganchor="true"] h6');
   }
 }
