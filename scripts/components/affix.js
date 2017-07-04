@@ -37,7 +37,10 @@ class Affix {
     const target = document.getElementById(event.target.getAttribute('data-anchor'));
     const header = document.getElementById('header');
     const subHeader = document.getElementById('doc-subheader');
-    const scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
+    const docContent = document.getElementById('doc-content');
+    let scrollTop = target.offsetTop;
+    if (docContent.firstElementChild == target) scrollTop -= header.offsetHeight;
+
     return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
   }
 

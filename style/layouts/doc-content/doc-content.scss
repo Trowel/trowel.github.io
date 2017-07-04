@@ -42,6 +42,19 @@
   margin-bottom: 0.5rem;
 }
 
+/**
+ * 1 - make sure when clicking on anchors targeting headings, does not make them
+ *     under the fixed header
+ */
+#doc-content h1,
+#doc-content h2,
+#doc-content h3,
+#doc-content h4,
+#doc-content h5,
+#doc-content h6 {
+  padding-top: $header--height + $doccontent--padding; /* 1 */
+}
+
 #doc-content > *:first-child {
   padding-top: $doccontent--padding;
 }

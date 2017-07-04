@@ -117,7 +117,10 @@ var Affix = function () {
       var target = document.getElementById(event.target.getAttribute('data-anchor'));
       var header = document.getElementById('header');
       var subHeader = document.getElementById('doc-subheader');
-      var scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
+      var docContent = document.getElementById('doc-content');
+      var scrollTop = target.offsetTop;
+      if (docContent.firstElementChild == target) scrollTop -= header.offsetHeight;
+
       return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
     }
   }, {
