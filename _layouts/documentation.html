@@ -7,6 +7,6 @@ layout: default
 {% endif %}
 {% include sidebar-documentation.html %}
 
-<div id="doc-content"{% if page.affix == true %} data-affix="load"{% endif %}>
+<div id="doc-content"{% if page.affix == true %} data-affix="load"{% endif %}{% if page.heading_anchor == true %} data-headinganchor="true"{% endif %}>
   {{ content }}
 </div>

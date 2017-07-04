@@ -1,5 +1,6 @@
 import Menus from './components/menu';
 import Affix from './components/affix';
+import DocHeadings from './components/doc-headings';
 import TrowelBreadcrumbs from '../node_modules/trowel-breadcrumbs/src/javascript/breadcrumbs';
 import TrowelAlerts from '../node_modules/trowel-alerts/src/javascript/alerts';
 import TrowelDrops from '../node_modules/trowel-drops/src/javascript/drops';
@@ -8,6 +9,7 @@ import TrowelModals from '../node_modules/trowel-modals/src/javascript/modals';
 
 const menus = new Menus(document.querySelectorAll('[data-flag="menu"]'));
 const affix = new Affix();
+const docHeadings = new DocHeadings();
 
 // Trowel components
 const breadcrumbs = new TrowelBreadcrumbs(document.querySelectorAll('[data-flag="breadcrumb"]'));

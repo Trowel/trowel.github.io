@@ -2,6 +2,7 @@
 @import '../../components/doc-subheader/utils/variables';
 @import '../../components/doc-sidebar/utils/variables';
 @import '../../components/affix/utils/variables';
+@import '../../utils/colors';
 
 @import './utils/variables';
 
@@ -57,4 +58,34 @@
 
 #doc-content > *:first-child {
   padding-top: $doccontent--padding;
+}
+
+
+#doc-content h1,
+#doc-content h2,
+#doc-content h3,
+#doc-content h4,
+#doc-content h5,
+#doc-content h6 {
+  display: flex;
+  align-items: center;
+}
+
+#doc-content h1 .anchorjs-link,
+#doc-content h2 .anchorjs-link,
+#doc-content h3 .anchorjs-link,
+#doc-content h4 .anchorjs-link,
+#doc-content h5 .anchorjs-link,
+#doc-content h6 .anchorjs-link {
+  margin-left: -0.8em !important;
+  padding-right: 0.3em !important;
+
+  @include on-events {
+    @include color('success');
+    text-decoration: none;
+  }
+
+  &::before {
+    content: none;
+  }
 }

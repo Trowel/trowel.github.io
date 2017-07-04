@@ -5,6 +5,7 @@
     "build-javascript-dev": "webpack --progress --colors --watch"
   },
   "dependencies": {
+    "anchor-js": "^4.0.0",
     "normalize.css": "^7.0.0",
     "trowel-alerts": "^0.1.0",
     "trowel-badges": "^0.1.0",
