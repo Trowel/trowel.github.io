@@ -37,7 +37,7 @@ Trowel-core installed, we are now good to go and we can implement a *Trowel Comp
 
 Download the *Trowel Component* you want to use, and import it after `trowel-core` into your main `scss` file.
 
-The download and the file to import depends of each library, but for the official *FriendsOfTrowel* components, it always respect the same pattern.
+The download and the file to import depends on each library, but for the official *FriendsOfTrowel* components, it always respects the same pattern.
 
 ```scss
 // main.scss
