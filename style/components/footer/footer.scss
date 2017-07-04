@@ -84,3 +84,37 @@
     margin-left: 1em;
   }
 }
+
+.troopers-logo {
+  .footer__support:hover &,
+  .footer__support:active &,
+  .footer__support:focus & {
+    color: color('white');
+  }
+}
+
+.troopers-logo__hamb rect {
+  .footer__support:hover &,
+  .footer__support:active &,
+  .footer__support:focus & {
+    &:nth-child(1) {
+      color: #34B190;
+    }
+
+    &:nth-child(2) {
+      color: #9777A8;
+    }
+
+    &:nth-child(3) {
+      color: #F4A160;
+    }
+
+    &:nth-child(4) {
+      color: #E26566;
+    }
+
+    &:nth-child(5) {
+      color: #60AFE2;
+    }
+  }
+}
