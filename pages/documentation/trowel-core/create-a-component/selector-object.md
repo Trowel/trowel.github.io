@@ -13,12 +13,12 @@ That's why selectors are objects, this way we can set/get/append properties to o
 But objects do not exists in Sass : selector object are in facts maps with as key what we call a property (and as a value... its value). Those selectors objects are created and manipuled with the function `selector()`.
 
 ## Create our first selector object
-To initiate a selector object, we just require to set the *block* string of our selector (remember we are strongly committed to the BEM philosophy).
+To initialize a selector object, we just require to set the *block* string of our selector (remember we are strongly committed to the BEM philosophy).
 
 We will -as you can see in the snippet below- use the `selector()` function with as parameter `new` and then a string that will be our selector's block.
 
 ```scss
-// initiate a selector object
+// initialize a selector object
 $btn--selector: selector(new 'btn');
 
 // it equals in css to :
@@ -38,24 +38,24 @@ $btn--syntax: (
   ),
 );
 
-// initiate a selector object
+// initialize a selector object
 $btn--selector: selector(new 'btn' with $button--syntax);
 
 // it equals in css to :
 .c-btn { ... }
 ```
 
-Notice that selectors initiated are only class. It cannot be id's or tag elements. Tag elements can be added to the class via flags.
+Notice that selectors initialized are only class. It cannot be id's or tag elements. Tag elements can be added to the class via flags.
 
 ## Extend our selector object
-Our selector object is initiated and we can now extend it by adding properties that will specify more it.
+Our selector object is initialized and we can now extend it by adding properties that will specify more it.
 
 To set or append properties to the selector, we once again have to use the function `selector()`, and depending of its parameter, the function will return the selector object with new or edited properties.
 
 To understand how works selectors objets and the function `selector()`, try some of the functions listed below and then debug your selector variable to see how it looks like
 
 ### The list of the extensions possible
-Let suppose we have a `$btn--selector` variable where we had already initiated a selector object with the function `selector(new 'btn')`.
+Let suppose we have a `$btn--selector` variable where we had already initialized a selector object with the function `selector(new 'btn')`.
 
 In the table below we list all the possibilty to extend this selector object. Keep in mind that the `selector()` must be stocked into a variable.
 
