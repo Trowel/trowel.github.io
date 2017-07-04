@@ -29,7 +29,7 @@ With the `$container--width` you can control the width of the container, and for
 ```
 
 ### Grids
-You can layout as grid your content, by first creating a `.grid` DOM element, then for each column a `.grid__col` and then specify the size of the column depending of the viewport width configured in the `$trowel-config` variable like `.grid__col--xs-2`.
+You can layout your content as grid, by first creating a `.grid` DOM element, then for each column a `.grid__col` and then specify the size of the column depending of the viewport width configured in the `$trowel-config` variable like `.grid__col--xs-2`.
 
 <div class="preview">
   <div class="grid">

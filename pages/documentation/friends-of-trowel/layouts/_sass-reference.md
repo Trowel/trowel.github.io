@@ -9,7 +9,7 @@ You can override the global syntax config for a specific component with the foll
 
 ### Enables
 
-You can avoid the generation of some css with those following variables
+You can avoid the generation of some css with the following variables
 
 {% include doc/scss-reference-thead.md %}
 | `$container--enable` | `true` | enable the generation of style rules for the `.container` block |
