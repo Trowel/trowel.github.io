@@ -21,10 +21,10 @@ $button--background-color: rgb(255, 0, 0);
 }
 ```
 
-The variable name is quitte obvious about its purpose, but it is only semantics. Trowel Component should provide explanation on the action of each variable.
+The variable name is quite obvious about its purpose, but it is only semantics. Trowel Component should provide explanation on the action of each variable.
 
 ## Null value
-The `$button--background-color` can also be setted as `null`. This will just not generate declaration into the selector for the property binded to the variable.
+The `$button--background-color` can also be set as `null`. This will just not generate declaration into the selector for the property binded to the variable.
 
 ## The flags concept
 The `$button--background-color` can be transformed into a map. A map a type of variable which is an array matching keys to value.
@@ -110,7 +110,7 @@ $button--background-color: (
 }
 ```
 
-If the variable is binded to an element selector like the variable `$button-icon--background-color` below it will generate a selector where the modifier is written on the block selector and not on the element :
+If the variable is binded to an element selector like the variable `$button-icon--background-color` below, it will generate a selector where the modifier is written on the block selector and not on the element :
 
 ```scss
 $button-icon--background-color: (
@@ -124,7 +124,7 @@ $button-icon--background-color: (
 ```
 
 ## Element-modifiers flags
-If you want a modifier directly written on the element and not on the block you can write a modifier flag with `'~'` instead of `'-'`.
+If you want a modifier directly written on the element and not on the block, you can write a modifier flag with `'~'` instead of `'-'`.
 
 ```scss
 $button-icon--background-color: (
@@ -178,7 +178,7 @@ $button--background-color: (
 ```
 
 ## The `'default' flag`
-In the example below we setted the `background-color` for several context but we did not a context-less value. The `'default'` flag is here to set a value without adding more context.
+In the example below, we set the `background-color` for several context but we did not a context-less value. The `'default'` flag is here to set a value without adding more context.
 
 ```scss
 $button--background-color: (
@@ -225,6 +225,6 @@ $button--background-color: (
 }
 ```
 
-Notice that you cannot nest a *responsive breakpoint flag* into an another *responsive breakpoint flag*, and a *tag flag* in a *tag flag*.
+Note that you cannot nest a *responsive breakpoint flag* into an another *responsive breakpoint flag*, and a *tag flag* in a *tag flag*.
 
 {% include page-control.html href="/documentation/trowel-core/create-a-component/" label="Create a trowel component" %}
