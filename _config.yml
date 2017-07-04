@@ -28,6 +28,7 @@ defaults:
       library: trowel/trowel
       subheader: true
       type: trowel
+      heading_anchor: true
       trwl_theme:
         colors:
           gray_light: rgb(248, 248, 250)

@@ -5,8 +5,7 @@ class Affix {
     if (!this.contentWrapper) return;
     if (!this.contentWrapper.getAttribute('data-affix')) return;
 
-    this.print();
-    return this.listener();
+    return this.print();
   }
 
   get headings() {
@@ -25,24 +24,13 @@ class Affix {
     this.headings.map(heading => {
       const anchor = document.createElement("a");
       anchor.innerText = heading.innerText;
-      anchor.setAttribute('data-anchor', heading.id);
+      anchor.setAttribute('data-anchor', '');
+      anchor.setAttribute('href', `#${heading.id}`);
 
       return nav.append(anchor);
     });
 
     return this.contentWrapper.before(nav);
-  }
-
-  goTo(event) {
-    const target = document.getElementById(event.target.getAttribute('data-anchor'));
-    const header = document.getElementById('header');
-    const subHeader = document.getElementById('doc-subheader');
-    const scrollTop = target.offsetTop - (header.offsetHeight + subHeader.offsetHeight);
-    return document.body.scrollTop = document.documentElement.scrollTop = scrollTop;
-  }
-
-  listener() {
-    this.anchors.map(anchor => anchor.addEventListener('click', this.goTo.bind(this)));
   }
 }
 
