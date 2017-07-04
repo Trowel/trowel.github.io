@@ -40,12 +40,34 @@
 #doc-content h4,
 #doc-content h5,
 #doc-content h6 {
-  padding-top: calc(#{$header--height + $doccontent--padding} + 2em);
-  margin-top: -($header--height + $doccontent--padding);
+  padding-top: $header--height + $doccontent--padding;
+  margin-top: calc(#{-$header--height - $doccontent--padding} + 1.5em);
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
 }
+
+#doc-content h1 {
+  font-size: 2.25rem;
+}
+
+#doc-content h2 {
+  font-size: 1.75rem;
+}
+
+#doc-content h3 {
+  font-size: 1.3rem;
+}
+
+#doc-content h4 {
+  font-size: 1.125rem
+}
+
+#doc-content h5,
+#doc-content h6 {
+  font-size: 1rem;
+}
+
 
 #doc-content h1 .anchorjs-link,
 #doc-content h2 .anchorjs-link,
