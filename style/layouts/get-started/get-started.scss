@@ -1,0 +1,46 @@
+@import './utils/variables';
+@import '../../utils/colors';
+@import '../../utils/font-families';
+@import '../../utils/gutters';
+@import '../doc-content/utils/variables';
+@import '../../components/skew-sections/utils/variables';
+
+#get-started__header {
+  margin-left: -$doccontent--padding;
+  margin-right: -$doccontent--padding;
+  padding: 0 !important;
+}
+
+#get-started__header-bg {
+  @include background-color('gray-light');
+}
+
+#get-started__header-bg::before {
+  @include media-query('md') {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 260px;
+    width: $dochome-headerarturo--width;
+    transform: skewY(#{$skewsection--skew * -1});
+    background-image: url('/assets/images/arturo/arturo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom: -20px;
+  }
+}
+
+#get-started__header-content {
+  padding: $doccontent--padding;
+  color: inherit;
+
+  @include media-query('md') {
+    margin-left: $dochome-headerarturo--width;
+  }
+}
+
+
+#get-started__heading {
+  margin: 0;
+}
