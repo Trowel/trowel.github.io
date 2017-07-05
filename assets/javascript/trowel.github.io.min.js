@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -148,7 +148,8 @@ exports.default = Affix;
 module.exports = exports['default'];
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -210,7 +211,7 @@ exports.default = Menus;
 module.exports = exports['default'];
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -244,7 +245,7 @@ class TrowelAlert {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -317,7 +318,7 @@ class TrowelBreadcrumb {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -508,7 +509,7 @@ class TrowelCollapseTrigger {
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -755,7 +756,7 @@ class TrowelDrop {
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -840,13 +841,14 @@ class TrowelModal {
 
 
 /***/ }),
-/* 7 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _menu = __webpack_require__(1);
+var _menu = __webpack_require__(2);
 
 var _menu2 = _interopRequireDefault(_menu);
 
@@ -854,23 +856,23 @@ var _affix = __webpack_require__(0);
 
 var _affix2 = _interopRequireDefault(_affix);
 
-var _breadcrumbs = __webpack_require__(3);
+var _breadcrumbs = __webpack_require__(4);
 
 var _breadcrumbs2 = _interopRequireDefault(_breadcrumbs);
 
-var _alerts = __webpack_require__(2);
+var _alerts = __webpack_require__(3);
 
 var _alerts2 = _interopRequireDefault(_alerts);
 
-var _drops = __webpack_require__(5);
+var _drops = __webpack_require__(6);
 
 var _drops2 = _interopRequireDefault(_drops);
 
-var _collapses = __webpack_require__(4);
+var _collapses = __webpack_require__(5);
 
 var _collapses2 = _interopRequireDefault(_collapses);
 
-var _modals = __webpack_require__(6);
+var _modals = __webpack_require__(7);
 
 var _modals2 = _interopRequireDefault(_modals);
 
