@@ -9,7 +9,7 @@
   @include background-color('success');
   @include color('white');
   height: $docsubheader--height;
-  position: fixed;
+  position: absolute;
   top: $header--height;
   left: $docsubheader--height;
   right: 0;

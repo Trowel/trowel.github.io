@@ -2,11 +2,12 @@
 @import '../../components/doc-subheader/utils/variables';
 @import '../../components/doc-sidebar/utils/variables';
 @import '../../components/affix/utils/variables';
+@import '../../utils/colors';
 
 @import './utils/variables';
 
 #doc-content {
-  padding: 0 $doccontent--padding;
+  padding: $doccontent--padding;
   margin-top: $header--height;
 
   @include media-query('sm') {
@@ -32,16 +33,57 @@
   }
 }
 
+
+#doc-content h1,
+#doc-content h2,
+#doc-content h3,
+#doc-content h4,
+#doc-content h5,
+#doc-content h6 {
+  padding-top: $header--height + $doccontent--padding;
+  margin-top: calc(#{-$header--height - $doccontent--padding} + 1.5em);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#doc-content h1 {
+  font-size: 2.25rem;
+}
+
 #doc-content h2 {
-  padding-top: $doccontent--padding;
-  margin-top: 4rem;
+  font-size: 1.75rem;
 }
 
 #doc-content h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
 
-#doc-content > *:first-child {
-  padding-top: $doccontent--padding;
+#doc-content h4 {
+  font-size: 1.125rem
+}
+
+#doc-content h5,
+#doc-content h6 {
+  font-size: 1rem;
+}
+
+
+#doc-content h1 .anchorjs-link,
+#doc-content h2 .anchorjs-link,
+#doc-content h3 .anchorjs-link,
+#doc-content h4 .anchorjs-link,
+#doc-content h5 .anchorjs-link,
+#doc-content h6 .anchorjs-link {
+  margin-left: -0.8em !important;
+  padding-right: 0.3em !important;
+
+  @include on-events {
+    @include color('success');
+    text-decoration: none;
+  }
+
+  &::before {
+    content: none;
+  }
 }
